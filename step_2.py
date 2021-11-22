@@ -15,7 +15,7 @@ window.destroy()
 button = Button(window, text='Hi Veginner! 이번 단계의 요리 공개!', command=press1)
 button.pack(side=TOP)
 
-photo = PhotoImage(file="가지_moza.png")
+photo = PhotoImage(file="mosaic/가지_moza.png")
 btn = Button(window, width=200, height=200, image=photo, command=press2)
 window.mainloop()
 
@@ -50,23 +50,23 @@ def ingredient5() :
 ibtn = Button(window, text="당근을 어떻게 요리하시겠습니까?", command=press2)
 ibtn.grid(row=1, column=4)
 
-photo1 = PhotoImage(file="고추2_moza.png")
+photo1 = PhotoImage(file="mosaic/고추2_moza.png")
 btn1 = Button(window, width=200, height=200, image=photo1, command=ingredient1)
 btn1.grid(row=0, column=0)
 
-photo2 = PhotoImage(file="달걀_moza.png")
+photo2 = PhotoImage(file="mosaic/달걀_moza.png")
 btn2 = Button(window, width=200, height=200, image=photo2, command=ingredient2)
 btn2.grid(row=0, column=1)
 
-photo3 = PhotoImage(file="감자_moza.png")
+photo3 = PhotoImage(file="mosaic/감자_moza.png")
 btn3 = Button(window, width=200, height=200, image=photo3, command=ingredient3)
 btn3.grid(row=0, column=2)
 
-photo4 = PhotoImage(file="고등어조림2_moza.png")
+photo4 = PhotoImage(file="mosaic/고등어조림2_moza.png")
 btn4 = Button(window, width=200, height=200, image=photo4, command=ingredient4)
 btn4.grid(row=0, column=3)
 
-photo5 = PhotoImage(file="당근_moza.png")
+photo5 = PhotoImage(file="mosaic/당근_moza.png")
 btn5 = Button(window, width=200, height=200, image=photo5, command=ingredient5)
 btn5.grid(row=0, column=4)
 # btn7 = Button(window, text="다음 단계로", command=pressed)
