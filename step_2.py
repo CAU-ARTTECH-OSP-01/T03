@@ -1,6 +1,6 @@
 # opensource_scene1&2
 from tkinter import *
-#from PIL import Image
+#from PIL import Image 
 window = Tk()
 window.title("Veginner")
 
