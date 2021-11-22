@@ -1,10 +1,10 @@
 # opensource_scene1&2
 from tkinter import *
-#from PIL import Image 
+#from PIL import Image
 window = Tk()
 window.title("Veginner")
 
-def next_level():
+def next_level() :
     btn.destroy()
     btn1.destroy()
     btn2.destroy()
@@ -13,7 +13,7 @@ def next_level():
     window.destroy()
 # window.title("재료 고르기")
 
-def press1():
+def press1() :
     button.destroy()
     btn.pack(side=TOP)
     btn1.pack()
