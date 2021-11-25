@@ -43,7 +43,7 @@ btn3 = Button(window, width=710, height=90, image=photo4, command=press2)
 
 photo5 = PhotoImage(file="select-graphic/Vegan.png")
 btn4 = Button(window, width=710, height=90, image=photo5, command=press2)
-
+ 
 window.mainloop()
 
 window = Tk()
