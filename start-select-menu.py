@@ -12,7 +12,7 @@ def next_level(): # 다음 창으로 고고
     btn3.destroy()
     btn4.destroy()
     window.geometry("1000x1000")
-    window.title("재료 고르기")
+    window.title("단계 고르기")
 
 def press1():
     button.destroy()
@@ -38,7 +38,7 @@ def press6():
     next_level()
 
 
-photo = PhotoImage(file="starticon.png")
+photo = PhotoImage(file="select-graphic/starticon.png")
 button = Button(window, width=400, height=400, image=photo, command=press1)
 button.grid(row=0, column=1)
 
