@@ -5,44 +5,44 @@ from tkinter import *
 window = Tk()
 window.title("Veginner")
 
-def pesco_dishes():
-    def fishdish():
-        button.destroy()
-        btn_fishdish.pack()
-        btn1.pack()
 
-    def chicken():
-        button.destroy()
-        btn_fishdish.pack()
-        btn1.pack()
-
-    photo_fishdish = PhotoImage(file="mosaic/고등어조림01.png")
-    btn_fishdish = Button(window, width=200, height=200, image=photo_fishdish, command=fishdish)
-    button.grid(row=0, column=0)
-
-    photo_chicken = PhotoImage(file="mosaic/고등어조림01.png")  # 찜닭
-    btn_chicken = Button(window, width=200, height=200, image=photo_chicken, command=chicken)
-    button.grid(row=0, column=1)
-
-    window.mainloop()
 
 def next_level_pollo():
     btn_pollo.destroy()
-    btn1_pesco.destroy()
+    btn_pesco.destroy()
     btn_lacto_ovo.destroy()
     btn_ovo.destroy()
     btn_vegan.destroy()
     new_menu()
-    button = Button(window, text='Hi Veginner! 이번 단계의 요리 공개!', command=press_next)
-    button.pack(side=TOP)
 
-    pesco_dishes() #여기서 오류
+    def press_next():
+        def fishdish():
+            btn_fishdish.destroy()
+
+        def chicken():
+            btn_chicken.destroy()
+
+        photo_fishdish = PhotoImage(file="mosaic/고등어조림01.png")
+        btn_fishdish = Button(window, width=200, height=200, image=photo_fishdish, command=fishdish)
+        button.grid(row=0, column=0)
+
+        photo_chicken = PhotoImage(file="mosaic/고등어조림01.png")  # 찜닭
+        btn_chicken = Button(window, width=200, height=200, image=photo_chicken, command=chicken)
+        button.grid(row=0, column=1)
+
+        window.mainloop()
+        btn_open_menu.destroy() #코드를 바꾸어도 아까와 같은 오류
+        btn_fishdish.pack() # pesco_dishes로 감싸주고, press_next에 넣으면 오류메세지는 안 뜨지만 버튼이 화면에 안 뜸
+        btn_chicken.pack()
+
+    btn_open_menu = Button(window, text='Hi Veginner! 이번 단계의 요리 공개!', command=press_next)
+    btn_open_menu.pack(side=TOP)
 
 
 
 def next_level_pesco():
     btn_pollo.destroy()
-    btn1_pesco.destroy()
+    btn_pesco.destroy()
     btn_lacto_ovo.destroy()
     btn_ovo.destroy()
     btn_vegan.destroy()
@@ -50,7 +50,7 @@ def next_level_pesco():
 
 def next_level_lacto_ovo():
     btn_pollo.destroy()
-    btn1_pesco.destroy()
+    btn_pesco.destroy()
     btn_lacto_ovo.destroy()
     btn_ovo.destroy()
     btn_vegan.destroy()
@@ -58,7 +58,7 @@ def next_level_lacto_ovo():
 
 def next_level_ovo():
     btn_pollo.destroy()
-    btn1_pesco.destroy()
+    btn_pesco.destroy()
     btn_lacto_ovo.destroy()
     btn_ovo.destroy()
     btn_vegan.destroy()
@@ -66,7 +66,7 @@ def next_level_ovo():
 
 def next_level_vegan():
     btn_pollo.destroy()
-    btn1_pesco.destroy()
+    btn_pesco.destroy()
     btn_lacto_ovo.destroy()
     btn_ovo.destroy()
     btn_vegan.destroy()
@@ -79,13 +79,12 @@ def next_level_vegan():
 def press1():
     button.destroy()
     btn_pollo.pack(side=TOP)
-    btn1_pesco.pack()
+    btn_pesco.pack()
     btn_lacto_ovo.pack()
     btn_ovo.pack()
     btn_vegan.pack(side=BOTTOM)
 
-def press_next() :
-    button.destroy()
+
 
 def new_menu():
     window.geometry("1000x1000")
@@ -101,7 +100,7 @@ photo_pollo = PhotoImage(file="select-graphic/Pollo-vegetarian.png")
 btn_pollo = Button(window, width=710, height=90, image=photo_pollo, command=next_level_pollo)
 
 photo_pesco = PhotoImage(file="select-graphic/Pesco-vegetarian.png")
-btn1_pesco = Button(window, width=710, height=90, image=photo_pesco, command=next_level_pesco)
+btn_pesco = Button(window, width=710, height=90, image=photo_pesco, command=next_level_pesco)
 
 photo_lacto_ovo = PhotoImage(file="select-graphic/Lacto-ovo-vegetarian.png")
 btn_lacto_ovo = Button(window, width=710, height=90, image=photo_lacto_ovo, command=next_level_lacto_ovo)
