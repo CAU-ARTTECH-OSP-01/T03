@@ -36,7 +36,7 @@ def next_level_pollo():
     button = Button(window, text='Hi Veginner! 이번 단계의 요리 공개!', command=press_next)
     button.pack(side=TOP)
 
-    pesco_dishes()
+    pesco_dishes() #여기서 오류
 
 
 
