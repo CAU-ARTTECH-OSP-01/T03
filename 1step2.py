@@ -1,5 +1,6 @@
 # opensource_scene1&2
 from tkinter import *
+import time
 
 # from PIL import Image
 window = Tk()
@@ -146,15 +147,13 @@ def todo1():
     butt.grid(row=1, column=3)
 
 
-def todo2(e):
+def todo2():
     butt2.destroy()
     ibutt = Button(window, text="볶기 선택!", command=press2)
     ibutt.grid(row=3, column=3)
     butt = Button(window, text="볶기 완료!", command=press2)
     butt.grid(row=1, column=3)
-    ##################################################################################################################감점
-    e += 1
-    return e
+
 
 
 ########################################################################################################################감점
@@ -164,33 +163,33 @@ butt1 = Button(window, width=200, height=200, image=photo01, command=todo1)
 butt1.grid(row=0, column=1)
 
 photo02 = PhotoImage(file="mosaic/볶기_moza.png")
-butt2 = Button(window, width=200, height=200, image=photo02, command=todo2(e))
+butt2 = Button(window, width=200, height=200, image=photo02, command=todo2)
 butt2.grid(row=0, column=2)
 
-####################3단계
+###############################################################################################3단계
+
 import tkinter
-import time
 
 window = tkinter.Tk()
 window.geometry("1000x1000")
-window.title("Veginner")
+window.title("tk")
 window.resizable(True, True)
 text = tkinter.Text(window)
 
 ######기둥들과 사각형하나 이미지 불러오기 (사각형 이미지 하나 수정 필요)-사각형별 이미지 조정 필요
-image1 = tkinter.PhotoImage(file="빨간기둥1.png", master="Veginner")
+image1 = tkinter.PhotoImage(file="C:\gitgit\T03\sqr\빨간기둥1.png", master=window)
 label1 = tkinter.Label(window, image=image1)
 label1.pack()
 
-image2 = tkinter.PhotoImage(file="노란기둥1.png")
+image2 = tkinter.PhotoImage(file="C:\gitgit\T03\sqr\노란기둥1.png", master=window)
 label2 = tkinter.Label(window, image=image2)
 label2.pack()
 
-image3 = tkinter.PhotoImage(file="초록기둥1.png")
+image3 = tkinter.PhotoImage(file="C:\gitgit\T03\sqr\초록기둥1.png", master=window)
 label3 = tkinter.Label(window, image=image3)
 label3.pack()
 
-image0 = tkinter.PhotoImage(file="sqe.png")
+image0 = tkinter.PhotoImage(file="C:\gitgit\T03\sqr\sqe.png", master=window)
 label0 = tkinter.Label(window, image=image0)
 label0.pack()
 
@@ -202,8 +201,7 @@ for i in range(1, 50):
     label1.place(x=100, y=1000 / i + 300)  ########   +뒤에 오는 값들은 앞선 코드에서 불러온 정보들을 이용해서 계산 추후 수정 필요
     window.update()
     time.sleep(0.01)
-    label2.place(x=219,
-                 y=1000 / i + 250 * e)  #############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@####감점 살짝 y축 조정하는 방식
+    label2.place(x=219, y=1000 / i + 250)  #############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@####감점 살짝 y축 조정하는 방식
     window.update()
     time.sleep(0.01)
     label3.place(x=340, y=1000 / i + 250)
