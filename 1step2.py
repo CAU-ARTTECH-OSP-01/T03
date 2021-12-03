@@ -167,7 +167,7 @@ butt2 = Button(window, width=200, height=200, image=photo02, command=todo2)
 butt2.grid(row=0, column=2)
 
 ###############################################################################################3단계
-window.destroy()
+
 import tkinter
 
 window = tkinter.Tk()

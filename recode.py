@@ -16,24 +16,26 @@ def next_level_pollo():
     new_menu()
 
     def press_next():
+        btn_open_menu.destroy()
+
+
         def fishdish():
             btn_fishdish.destroy()
+            btn_chicken.destroy()
 
         def chicken():
             btn_chicken.destroy()
+            btn_fishdish.destroy()
 
         photo_fishdish = PhotoImage(file="mosaic/고등어조림01.png")
         btn_fishdish = Button(window, width=200, height=200, image=photo_fishdish, command=fishdish)
-        button.grid(row=0, column=0)
+        btn_fishdish.pack()
 
         photo_chicken = PhotoImage(file="mosaic/고등어조림01.png")  # 찜닭
         btn_chicken = Button(window, width=200, height=200, image=photo_chicken, command=chicken)
-        button.grid(row=0, column=1)
+        btn_chicken.pack()
 
         window.mainloop()
-        btn_open_menu.destroy() #코드를 바꾸어도 아까와 같은 오류
-        btn_fishdish.pack() # pesco_dishes로 감싸주고, press_next에 넣으면 오류메세지는 안 뜨지만 버튼이 화면에 안 뜸
-        btn_chicken.pack()
 
     btn_open_menu = Button(window, text='Hi Veginner! 이번 단계의 요리 공개!', command=press_next)
     btn_open_menu.pack(side=TOP)
@@ -114,8 +116,7 @@ btn_vegan = Button(window, width=710, height=90, image=photo_vegan, command=next
 window.mainloop()
 
 
-def press2() :
-    window.destroy()
+
 
 
 def pressed():
