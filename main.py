@@ -31,7 +31,7 @@ def press2():
     next_level()
 
 
-photo = PhotoImage(file="C:\gitgit\T03\select-graphic\starticon.png")
+photo = PhotoImage(file="select-graphic/starticon.png")
 button = Button(window, width=400, height=400, image=photo, command=press1)
 button.grid(row=0, column=1)
 
@@ -112,11 +112,11 @@ def ingredient5():
     ibtn.grid(row=1, column=4)
 
 
-photo1 = PhotoImage(file="C:\gitgit\T03\mosaic\고추2_moza.png")
+photo1 = PhotoImage(file="mosaic/고추2_moza.png")
 btn1 = Button(window, width=200, height=200, image=photo1, command=ingredient1)
 btn1.grid(row=0, column=0)
 
-photo2 = PhotoImage(file="C:\gitgit\T03\mosaic\물_moza.png")
+photo2 = PhotoImage(file="mosaic/물_moza.png")
 btn2 = Button(window, width=200, height=200, image=photo2, command=ingredient2)
 btn2.grid(row=0, column=1)
 
@@ -177,19 +177,19 @@ window.resizable(True, True)
 text = tkinter.Text(window)
 
 ######기둥들과 사각형하나 이미지 불러오기 (사각형 이미지 하나 수정 필요)-사각형별 이미지 조정 필요
-image1 = tkinter.PhotoImage(file="C:\gitgit\T03\sqr\빨간기둥1.png", master=window)
+image1 = tkinter.PhotoImage(file="sqr\빨간기둥1.png", master=window)
 label1 = tkinter.Label(window, image=image1)
 label1.pack()
 
-image2 = tkinter.PhotoImage(file="C:\gitgit\T03\sqr\노란기둥1.png", master=window)
+image2 = tkinter.PhotoImage(file="sqr\노란기둥1.png", master=window)
 label2 = tkinter.Label(window, image=image2)
 label2.pack()
 
-image3 = tkinter.PhotoImage(file="C:\gitgit\T03\sqr\초록기둥1.png", master=window)
+image3 = tkinter.PhotoImage(file="sqr\초록기둥1.png", master=window)
 label3 = tkinter.Label(window, image=image3)
 label3.pack()
 
-image0 = tkinter.PhotoImage(file="C:\gitgit\T03\sqr\sqe.png", master=window)
+image0 = tkinter.PhotoImage(file="sqr\sqe.png", master=window)
 label0 = tkinter.Label(window, image=image0)
 label0.pack()
 
