@@ -71,6 +71,9 @@ button.pack(side=TOP)
 
 photo = PhotoImage(file="mosaic/고등어조림01.png")
 btn = Button(window, width=200, height=200, image=photo, command=press2)
+start = time.time()#########################################################################################시간 감점요소  시간시작
+ingri = [0, 1, 2, 3]   ####################################################################################### 요리재료 감점용 정답 리스트
+useringr = [0]    ########################################################################################## 사용자가 넣을 요리재료 리스트
 window.mainloop()
 
 
@@ -84,10 +87,12 @@ window.geometry("1000x1000")
 window.title("재료 고르기")
 
 
+
 # 아래 함수들과 버튼 작업은 단순 반복문의 경우와 다름 - 클래스 구현 시에 이 부분을 참고해서 구현해야 함을 염두에 두어야 합니다
 def ingredient1():
     ibtn = Button(window, text="고추를 어떻게 요리하시겠습니까?", command=press2)
     ibtn.grid(row=1, column=0)
+    useringr.append(1)########################################################################################재료 하나 선택할때마다 리스트에 추가
     # 그 재료를 어떻게 할 지 보여주는 화면으로 전환
     # EX. 썰기/볶기 등
 
@@ -95,21 +100,26 @@ def ingredient1():
 def ingredient2():
     ibtn = Button(window, text="생수를 어떻게 사용하시겠습니까?", command=press2)
     ibtn.grid(row=1, column=1)
+    useringr.append(2)#############
 
 
 def ingredient3():
     ibtn = Button(window, text="무를 어떻게 요리하시겠습니까?", command=press2)
     ibtn.grid(row=1, column=2)
+    useringr.append(3)##############
 
 
 def ingredient4():
     ibtn = Button(window, text="고등어를 어떻게 요리하시겠습니까?", command=press2)
     ibtn.grid(row=1, column=3)
+    useringr.append(4)############
 
 
 def ingredient5():
     ibtn = Button(window, text="당근을 어떻게 요리하시겠습니까?", command=press2)
     ibtn.grid(row=1, column=4)
+    useringr.append(5)##############
+
 
 
 photo1 = PhotoImage(file="mosaic/고추2_moza.png")
@@ -134,6 +144,8 @@ btn5.grid(row=0, column=4)
 # btn7 = Button(window, text="다음 단계로", command=pressed)
 # btn7.pack(pady=30)
 
+
+
 window.mainloop()
 window = Tk()
 window.geometry("1000x1000")
@@ -154,7 +166,18 @@ def todo2():
     butt = Button(window, text="볶기 완료!", command=press2)
     butt.grid(row=1, column=3)
 
+######################################################################################################################요리재료 감점 리스트 비교하기
+ie=0
+for i in ingri :
+    if i not in useringr :
+        print("useringri not containing :")
+        ie+=1
+for i in useringr :
+    if i not in ingri  :
+        print("ingri not containing :")
+        ie+=1
 
+print(ie)
 
 ########################################################################################################################감점
 e = 0
@@ -169,7 +192,9 @@ butt2.grid(row=0, column=2)
 ###############################################################################################3단계
 
 import tkinter
-
+t=time.time() - start
+print(t)
+t1=t/600
 window = tkinter.Tk()
 window.geometry("1000x1000")
 window.title("tk")
@@ -198,20 +223,20 @@ label0.place(x=100, y=500)
 
 ####for문을 이용해 0.01초마다 사각형 위치 바꿔서 이동
 for i in range(1, 50):
-    label1.place(x=100, y=1000 / i + 300)  ########   +뒤에 오는 값들은 앞선 코드에서 불러온 정보들을 이용해서 계산 추후 수정 필요
+    label1.place(x=100, y=1000 / i + 200+50*ie)  ########  ie값 맞춰서 요리재료에 따른 사각형 줄어듬
     window.update()
     time.sleep(0.01)
-    label2.place(x=219, y=1000 / i + 250)  #############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@####감점 살짝 y축 조정하는 방식
+    label2.place(x=219, y=1000 / i + 200)  ##############################################################################요리방범 아직 미구현
     window.update()
     time.sleep(0.01)
-    label3.place(x=340, y=1000 / i + 250)
+    label3.place(x=340, y=1000 / i + 200 +50*t1)  #########시간에 따른 600초마다 y 50만큼 감점
     window.update()
     time.sleep(0.01)
 
 ####텍스트 출력
 label = tkinter.Label(window, text="Good Job!",
                       font=("Times", "16"))  #####텍스트, 폰트, 크기가 있음. 위치 조정 필요, if문 이용한 상황별 메세지 출력 필요.
-label.pack()
+
 
 ######메뉴 돌아가는 버튼 제작 필요
 
