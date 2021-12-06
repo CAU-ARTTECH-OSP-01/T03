@@ -10,7 +10,7 @@ from enum import Enum
 
 class Vege(Enum):
     POLLO = 0
-    PESCO = 1
+    PESCO = 1  
     LACTO_OVO = 2
     OVO = 3
     VEGAN = 4
