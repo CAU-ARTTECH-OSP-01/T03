@@ -188,34 +188,33 @@ butt1.grid(row=0, column=1)
 photo02 = PhotoImage(file="mosaic/볶기_moza.png")
 butt2 = Button(window, width=200, height=200, image=photo02, command=todo2)
 butt2.grid(row=0, column=2)
-
+window.mainloop()
 ###############################################################################################3단계
 
-import tkinter
+
 t=time.time() - start
 print(t)
 t1=t/600
-window = tkinter.Tk()
+window = Tk()
 window.geometry("1000x1000")
-window.title("tk")
 window.resizable(True, True)
-text = tkinter.Text(window)
+text = Text(window)
 
 ######기둥들과 사각형하나 이미지 불러오기 (사각형 이미지 하나 수정 필요)-사각형별 이미지 조정 필요
-image1 = tkinter.PhotoImage(file="sqr\빨간기둥1.png", master=window)
-label1 = tkinter.Label(window, image=image1)
+image1 = PhotoImage(file="sqr\빨간기둥1.png", master=window)
+label1 = Label(window, image=image1)
 label1.pack()
 
-image2 = tkinter.PhotoImage(file="sqr\노란기둥1.png", master=window)
-label2 = tkinter.Label(window, image=image2)
+image2 = PhotoImage(file="sqr\노란기둥1.png", master=window)
+label2 = Label(window, image=image2)
 label2.pack()
 
-image3 = tkinter.PhotoImage(file="sqr\초록기둥1.png", master=window)
-label3 = tkinter.Label(window, image=image3)
+image3 = PhotoImage(file="sqr\초록기둥1.png", master=window)
+label3 = Label(window, image=image3)
 label3.pack()
 
-image0 = tkinter.PhotoImage(file="sqr\sqe.png", master=window)
-label0 = tkinter.Label(window, image=image0)
+image0 = PhotoImage(file="sqr\sqe.png", master=window)
+label0 = Label(window, image=image0)
 label0.pack()
 
 ####흰 사각형 위치
@@ -234,7 +233,7 @@ for i in range(1, 50):
     time.sleep(0.01)
 
 ####텍스트 출력
-label = tkinter.Label(window, text="Good Job!",
+label = Label(window, text="Good Job!",
                       font=("Times", "16"))  #####텍스트, 폰트, 크기가 있음. 위치 조정 필요, if문 이용한 상황별 메세지 출력 필요.
 
 
