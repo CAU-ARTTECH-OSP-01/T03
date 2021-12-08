@@ -2,6 +2,7 @@
 #기존 코드&앞으로 구현될 코드 - 별도로 작업 중
 #클래스화 병행 - 클래스 코드는 이 파일에 누적 업데이트할 예정입니다.
 #***이미지 경로 - 깃허브가 기준이 되어야 합니다! 절대 개인 컴퓨터 경로로 바꾸지 말아주세요!***
+#각 클래스가 유기적으로 연결 - 개별 함수, 개별 클래스를 실행한다고 단독 코드가 작동하는 것이 아님
 
 import tkinter as tk
 from PIL import Image
@@ -37,8 +38,29 @@ class SampleSample(tk.Tk):
 def switch_frame(self, frame_class):
     new_frame = frame_class(self)
     if self._frame is not None:
-        self._frame.destroy()
+            self._frame.destroy()
         self._frame = new_frame
         self._frame.pack()
 
-class Start(tk.Frame): #구현 중
+class Start(tk.Frame): #스타트 버튼 클릭하면
+    def __init__(self, master):
+        tk.Frame.__init__(self, master)
+
+        self.StartImage = tk.PhotoImage(file="select-graphic/starticon.png",master=self)
+        self.StartButton = tk.Button(self, width=400, height=400, image=self.StartImage, command=lambda: master.switch_frame(Vegeterian))
+        self.StartButton.grid(row=0, column=1)
+
+class Vegeterian(tk.Frame): #단계 선택으로 창 전환 가능
+    def __init__(self, master):
+        tk.Frame.__init__(self, master)
+
+        self.VegeterianCnt = 5 #리스트 받아옴
+        self.VegeterianImgList = []
+        self.VegeterianBtnList = []
+
+        for i in range(self.VegeterianCnt): #따라서 반복문 사용 가능 - 가시성이 떨어지는 코드 삭제할 수 있도록
+            self.VegeterianImgList.append(tk.PhotoImage(file=VegeterianImageNameList[i],master=self).subsample(2))
+            self.VegeterianBtnList.append(tk.Button(self,width=710, height=90, image=self.VegeterianImgList[i], command=partial(self.onClick,master,str(i))))
+            self.VegeterianBtnList[i].grid(row=i, column=0)
+
+    def onClick(self,master,index): #ing
