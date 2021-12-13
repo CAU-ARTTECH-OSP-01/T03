@@ -63,4 +63,37 @@ class Vegeterian(tk.Frame): #단계 선택으로 창 전환 가능
             self.VegeterianBtnList.append(tk.Button(self,width=710, height=90, image=self.VegeterianImgList[i], command=partial(self.onClick,master,str(i))))
             self.VegeterianBtnList[i].grid(row=i, column=0)
 
-    def onClick(self,master,index): #ing
+    def onClick(self,master,index):
+        currentSelect["Vege"] = index
+        master.switch_frame(SelectAndGo)
+
+
+class SelectAndGo(tk.Frame):
+    def __init__(self, master):
+        tk.Frame.__init__(self, master)
+
+        # Open Button
+        self.Openbutton = tk.Button(self, text='Hi Veginner! ' + str(currentSelect["Vege"] + '번 단계의 요리 공개!'),
+                                    command=self.onClickChallenge)
+        self.Openbutton.pack(anchor="center")
+        # Openbutton.bind("<Button-1>", SelectAndGo.onClickChallenge)
+
+        # Food Button
+        self.FoodImage = tk.PhotoImage(file="mosaic/고등어조림2_moza.png", master=self) #이미지는 그래픽 완료 후 변경
+        self.FoodBtn = tk.Button(self, padx=10, pady=10, image=self.FoodImage,
+                                 command=lambda: master.switch_frame(SelectMaterial))
+
+    def onClickChallenge(self):
+        self.Openbutton.destroy()
+        self.FoodBtn.pack()
+
+class SelectMaterial(tk.Frame):
+    def __init__(self, master):
+        tk.Frame.__init__(self, master)
+        self.meterialCnt = 3
+        self.materialImageList = []
+        self.materialButtonList = []
+        
+        # material image button
+        for i in range(self.meterialCnt):
+            self.materialImageList.append(tk.PhotoImage(file=imageNameList[0][i], master=self).subsample(2)) #ing
