@@ -65,48 +65,48 @@ def next_level_pollo():
                 ibtn.grid(row=1, column=3)
 
             def ingredient10():
-                ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
+                ibtn = Button(window, text="양념을 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
 
 
 
-            photo1 = PhotoImage(file="mosaic/양파_moza.png")
+            photo1 = PhotoImage(file="폴로베지테리언-고등어조림/avocado.png") #아보카도 fake
             btn1 = Button(window, width=200, height=200, image=photo1, command=ingredient1)
             btn1.grid(row=0, column=0)
 
-            photo2 = PhotoImage(file="mosaic/고추2_moza.png")
+            photo2 = PhotoImage(file="폴로베지테리언-고등어조림/blueberry.png") #블루베리 fake
             btn2 = Button(window, width=200, height=200, image=photo2, command=ingredient2)
             btn2.grid(row=0, column=1)
 
-            photo3 = PhotoImage(file="mosaic/대파,쪽파_moza.png")
+            photo3 = PhotoImage(file="폴로베지테리언-고등어조림/godeongeou.png") #고등어
             btn3 = Button(window, width=200, height=200, image=photo3, command=ingredient3)
             btn3.grid(row=0, column=2)
 
-            photo4 = PhotoImage(file="mosaic/무_moza.png")
+            photo4 = PhotoImage(file="폴로베지테리언-고등어조림/mu.png") # 무
             btn4 = Button(window, width=200, height=200, image=photo4, command=ingredient4)
             btn4.grid(row=0, column=3)
 
-            photo5 = PhotoImage(file="mosaic/아보카도_moza.png")
+            photo5 = PhotoImage(file="폴로베지테리언-고등어조림/onion.png") # 양파
             btn5 = Button(window, width=200, height=200, image=photo5, command=ingredient5)
             btn5.grid(row=0, column=4)
 
-            photo6 = PhotoImage(file="mosaic/생선_moza.png") #손질된 고등어
+            photo6 = PhotoImage(file="폴로베지테리언-고등어조림/pa.png") #파
             btn6 = Button(window, width=200, height=200, image=photo6, command=ingredient6)
             btn6.grid(row=1, column=0)
 
-            photo7 = PhotoImage(file="mosaic/해산물_moza.png") #새우
+            photo7 = PhotoImage(file="폴로베지테리언-고등어조림/pepper.png") #고추
             btn7 = Button(window, width=200, height=200, image=photo7, command=ingredient7)
             btn7.grid(row=1, column=1)
 
-            photo8 = PhotoImage(file="mosaic/물_moza.png")
+            photo8 = PhotoImage(file="폴로베지테리언-고등어조림/sauce.png") # 양념
             btn8 = Button(window, width=200, height=200, image=photo8, command=ingredient8)
             btn8.grid(row=1, column=2)
 
-            photo9 = PhotoImage(file="mosaic/크림치즈_moza.png") #피자치즈
+            photo9 = PhotoImage(file="폴로베지테리언-고등어조림/seow.png") #새우 fake
             btn9 = Button(window, width=200, height=200, image=photo9, command=ingredient9)
             btn9.grid(row=1, column=3)
 
-            photo10 = PhotoImage(file="mosaic/케첩_moza.png") #양념
+            photo10 = PhotoImage(file="폴로베지테리언-찜닭/water.png") #물
             btn10 = Button(window, width=200, height=200, image=photo10, command=ingredient10)
             btn10.grid(row=1, column=4)
 
@@ -165,43 +165,43 @@ def next_level_pollo():
 
 
 
-            photo11 = PhotoImage(file="mosaic/양파_moza.png")
+            photo11 = PhotoImage(file="폴로베지테리언-찜닭/bread.png") # 식빵 fake
             btn11 = Button(window, width=200, height=200, image=photo11, command=ingredient11)
             btn11.grid(row=0, column=0)
 
-            photo12 = PhotoImage(file="mosaic/고추2_moza.png")
+            photo12 = PhotoImage(file="폴로베지테리언-찜닭/carrot.png") # 당근
             btn12 = Button(window, width=200, height=200, image=photo12, command=ingredient12)
             btn12.grid(row=0, column=1)
 
-            photo13 = PhotoImage(file="mosaic/대파,쪽파_moza.png")
+            photo13 = PhotoImage(file="폴로베지테리언-찜닭/chicken.png") #닭
             btn13 = Button(window, width=200, height=200, image=photo13, command=ingredient13)
             btn13.grid(row=0, column=2)
 
-            photo14 = PhotoImage(file="mosaic/무_moza.png")
+            photo14 = PhotoImage(file="폴로베지테리언-찜닭/dangmyeon.png.png") #당면
             btn14 = Button(window, width=200, height=200, image=photo14, command=ingredient14)
             btn14.grid(row=0, column=3)
 
-            photo15 = PhotoImage(file="mosaic/아보카도_moza.png")
+            photo15 = PhotoImage(file="폴로베지테리언-찜닭/gamza.png") #감자
             btn15 = Button(window, width=200, height=200, image=photo15, command=ingredient15)
             btn15.grid(row=0, column=4)
 
-            photo16 = PhotoImage(file="mosaic/생선_moza.png") #손질된 고등어
+            photo16 = PhotoImage(file="폴로베지테리언-찜닭/pa.png") #파
             btn16 = Button(window, width=200, height=200, image=photo16, command=ingredient16)
             btn16.grid(row=1, column=0)
 
-            photo17 = PhotoImage(file="mosaic/해산물_moza.png") #새우
+            photo17 = PhotoImage(file="폴로베지테리언-찜닭/pepper.png") #고추
             btn17 = Button(window, width=200, height=200, image=photo17, command=ingredient17)
             btn17.grid(row=1, column=1)
 
-            photo18 = PhotoImage(file="mosaic/물_moza.png")
+            photo18 = PhotoImage(file="폴로베지테리언-찜닭/sauce.png") #양념
             btn18 = Button(window, width=200, height=200, image=photo18, command=ingredient18)
             btn18.grid(row=1, column=2)
 
-            photo19 = PhotoImage(file="mosaic/크림치즈_moza.png") #피자치즈
+            photo19 = PhotoImage(file="폴로베지테리언-찜닭/tomato.png") #토마토 fake
             btn19 = Button(window, width=200, height=200, image=photo19, command=ingredient19)
             btn19.grid(row=1, column=3)
 
-            photo20 = PhotoImage(file="mosaic/케첩_moza.png") #양념
+            photo20 = PhotoImage(file="폴로베지테리언-찜닭/water.png") #물
             btn20 = Button(window, width=200, height=200, image=photo20, command=ingredient20)
             btn20.grid(row=1, column=4)
 
