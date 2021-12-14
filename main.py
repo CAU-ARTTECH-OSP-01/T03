@@ -222,21 +222,33 @@ label0.place(x=100, y=500)
 
 ####for문을 이용해 0.01초마다 사각형 위치 바꿔서 이동
 for i in range(1, 50):
-    label1.place(x=100, y=1000 / i + 200+50*ie)  ########  ie값 맞춰서 요리재료에 따른 사각형 줄어듬
+    label1.place(x=100, y=1000 / i + 220+50*ie)  ########  ie값 맞춰서 요리재료에 따른 사각형 줄어듬
     window.update()
     time.sleep(0.01)
-    label2.place(x=219, y=1000 / i + 200)  ##############################################################################요리방범 아직 미구현
+    label2.place(x=219, y=1000 / i + 220)  ##############################################################################요리방범 아직 미구현
     window.update()
     time.sleep(0.01)
-    label3.place(x=340, y=1000 / i + 200 +50*t1)  #########시간에 따른 600초마다 y 50만큼 감점
+    label3.place(x=340, y=1000 / i + 220 +50*t1)  #########시간에 따른 600초마다 y 50만큼 감점
     window.update()
     time.sleep(0.01)
 
 ####텍스트 출력
-label = Label(window, text="Good Job!",
-                      font=("Times", "16"))  #####텍스트, 폰트, 크기가 있음. 위치 조정 필요, if문 이용한 상황별 메세지 출력 필요.
+label111 = Label(window, text=" GOOD JOB", font=("Times", "30"))
+label11 = Label(window, text=" 토마토로 만든 참치, 가지로 만든 대체 장어 등 ‘식물 기반 대체 해산물 식품’ 분야가 새롭게 주목받고 있다.", font=("Times", "10"))  #####텍스트, 폰트, 크기가 있음. 위치 조정 필요, if문 이용한 상황별 메세지 출력 필요.
+label22 = Label(window, text=" 이미 미국에서는 식물 기반 대체식품 중 약 29%를 대체 해산물이 차지할 정도로 널리 사용되고 있다.", font=("Times", "10"))
+label33 = Label(window, text=" 해양 생태계 파괴나 중금속 및 미세 플라스틱 섭취 문제 등을 해결하기 위해 개발된 만큼 환경에 대한 경각심을 가지며", font=("Times", "10"))
+label44 = Label(window, text=" 대체 해산물을 적극적으로 소비할 수 있게 되길 바란다.", font=("Times", "10"))
+label111.pack()
+label111.place(x=250, y=100)
 
-
+label11.pack()
+label11.place(x=470, y=300)
+label22.pack()
+label22.place(x=470, y=330)
+label33.pack()
+label33.place(x=470, y=360)
+label44.pack()
+label44.place(x=470, y=390)
 ######메뉴 돌아가는 버튼 제작 필요
 
 
