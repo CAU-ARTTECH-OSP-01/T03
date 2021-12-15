@@ -177,7 +177,7 @@ def next_level_pollo():
             btn13 = Button(window, width=200, height=200, image=photo13, command=ingredient13)
             btn13.grid(row=0, column=2)
 
-            photo14 = PhotoImage(file="폴로베지테리언-찜닭/dangmyeon.png.png") #당면
+            photo14 = PhotoImage(file="폴로베지테리언-찜닭/dangmyeon.png") #당면
             btn14 = Button(window, width=200, height=200, image=photo14, command=ingredient14)
             btn14.grid(row=0, column=3)
 
