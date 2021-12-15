@@ -69,7 +69,7 @@ def next_level_pollo():
                 ibtn = Button(window, text="양념을 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
 
-            wall = PhotoImage(file="select-graphic/backgrond.png")
+            wall = PhotoImage(file="select-graphic/doma.png")
             wall_label = Label(image=wall)
             wall_label.place(x=-2, y=-2)
 
@@ -165,6 +165,10 @@ def next_level_pollo():
             def ingredient20():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
+
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
 
 
 
@@ -292,6 +296,10 @@ def next_level_pesco():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
 
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
+
             photo1 = PhotoImage(file="mosaic/양파_moza.png")
             btn1 = Button(window, width=200, height=200, image=photo1, command=ingredient1)
             btn1.grid(row=0, column=0)
@@ -384,6 +392,10 @@ def next_level_pesco():
             def ingredient20():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
+
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
 
             photo11 = PhotoImage(file="mosaic/양파_moza.png")
             btn11 = Button(window, width=200, height=200, image=photo11, command=ingredient11)
@@ -509,6 +521,10 @@ def next_level_lacto_ovo():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
 
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
+
             photo1 = PhotoImage(file="mosaic/양파_moza.png")
             btn1 = Button(window, width=200, height=200, image=photo1, command=ingredient1)
             btn1.grid(row=0, column=0)
@@ -601,6 +617,10 @@ def next_level_lacto_ovo():
             def ingredient20():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
+
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
 
             photo11 = PhotoImage(file="mosaic/양파_moza.png")
             btn11 = Button(window, width=200, height=200, image=photo11, command=ingredient11)
@@ -726,6 +746,10 @@ def next_level_ovo():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
 
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
+
             photo1 = PhotoImage(file="mosaic/양파_moza.png")
             btn1 = Button(window, width=200, height=200, image=photo1, command=ingredient1)
             btn1.grid(row=0, column=0)
@@ -818,6 +842,10 @@ def next_level_ovo():
             def ingredient20():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
+
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
 
             photo11 = PhotoImage(file="mosaic/양파_moza.png")
             btn11 = Button(window, width=200, height=200, image=photo11, command=ingredient11)
@@ -939,6 +967,10 @@ def next_level_vegan():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
 
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
+
             photo1 = PhotoImage(file="mosaic/양파_moza.png")
             btn1 = Button(window, width=200, height=200, image=photo1, command=ingredient1)
             btn1.grid(row=0, column=0)
@@ -1031,6 +1063,10 @@ def next_level_vegan():
             def ingredient20():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
+
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
 
             photo11 = PhotoImage(file="mosaic/양파_moza.png")
             btn11 = Button(window, width=200, height=200, image=photo11, command=ingredient11)
