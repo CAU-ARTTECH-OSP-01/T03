@@ -217,6 +217,9 @@ def next_level_pollo():
 
         window.mainloop()
 
+    wall = PhotoImage(file="select-graphic/backgrond.png")
+    wall_label = Label(image=wall)
+    wall_label.place(x=-2, y=-2)
 
     btn_open_menu = Button(window, text='Hi Veginner! 이번 단계의 요리 공개!', command=press_next)
     btn_open_menu.pack(side=TOP)
@@ -433,6 +436,10 @@ def next_level_pesco():
 
         window.mainloop()
 
+    wall = PhotoImage(file="select-graphic/backgrond.png")
+    wall_label = Label(image=wall)
+    wall_label.place(x=-2, y=-2)
+
     btn_open_menu = Button(window, text='Hi Veginner! 이번 단계의 요리 공개!', command=press_next)
     btn_open_menu.pack(side=TOP)
 
@@ -645,6 +652,10 @@ def next_level_lacto_ovo():
         btn_tofu_steak.pack()
 
         window.mainloop()
+
+    wall = PhotoImage(file="select-graphic/backgrond.png")
+    wall_label = Label(image=wall)
+    wall_label.place(x=-2, y=-2)
 
     btn_open_menu = Button(window, text='Hi Veginner! 이번 단계의 요리 공개!', command=press_next)
     btn_open_menu.pack(side=TOP)
@@ -1091,9 +1102,13 @@ def new_menu():
     window.geometry("1000x1000")
     window.title("Veginner")
 
+    wall = PhotoImage(file="select-graphic/backgrond.png")
+    wall_label = Label(image=wall)
+    wall_label.place(x=-2, y=-2)
+
 
 photo = PhotoImage(file="select-graphic/starticon.png")
-button = Button(window, width=400, height=400, image=photo, command=press1)
+button = Button(window, width=600, height=400, image=photo, command=press1)
 button.grid(row=0, column=1)
 
 photo_pollo = PhotoImage(file="select-graphic/Pollo-vegetarian.png")
@@ -1163,7 +1178,7 @@ def new_menu():
 
 
 photo = PhotoImage(file="select-graphic/starticon.png")
-button = Button(window, width=400, height=400, image=photo, command=press1)
+button = Button(window, width=600, height=400, image=photo, command=press1)
 button.grid(row=0, column=1)
 
 photo_pollo = PhotoImage(file="select-graphic/Pollo-vegetarian.png")
@@ -1189,6 +1204,41 @@ def pressed():
     window.destroy()
 
 
+window.mainloop()
+window = Tk()
+window.geometry("1000x1000")
+
+
+
+def todo1():
+    butt1.destroy()
+    ibutt = Button(window, text="다지기 선택!", command=press2)
+    ibutt.grid(row=3, column=3)
+    butt = Button(window, text="다지기 완료!", command=press2)
+    butt.grid(row=1, column=3)
+
+
+def todo2():
+    butt2.destroy()
+    ibutt = Button(window, text="볶기 선택!", command=press2)
+    ibutt.grid(row=3, column=3)
+    butt = Button(window, text="볶기 완료!", command=press2)
+    butt.grid(row=1, column=3)
+
+
+######################################################################################################################요리재료 감점 리스트 비교하기
+ie=0
+for i in ingri :
+    if i not in useringr :
+        print("useringri not containing :")
+        ie+=1
+for i in useringr :
+    if i not in ingri  :
+        print("ingri not containing :")
+        ie+=1
+
+print(ie)
+
 ########################################################################################################################감점
 e = 0
 photo01 = PhotoImage(file="mosaic/채썰기,다지기_moza.png")
@@ -1198,32 +1248,33 @@ butt1.grid(row=0, column=1)
 photo02 = PhotoImage(file="mosaic/볶기_moza.png")
 butt2 = Button(window, width=200, height=200, image=photo02, command=todo2)
 butt2.grid(row=0, column=2)
-
+window.mainloop()
 ###############################################################################################3단계
 
-import tkinter
 
-window = tkinter.Tk()
+t=time.time() - start
+print(t)
+t1=t/600
+window = Tk()
 window.geometry("1000x1000")
-window.title("tk")
 window.resizable(True, True)
-text = tkinter.Text(window)
+text = Text(window)
 
 ######기둥들과 사각형하나 이미지 불러오기 (사각형 이미지 하나 수정 필요)-사각형별 이미지 조정 필요
-image1 = tkinter.PhotoImage(file="sqr\빨간기둥1.png", master=window)
-label1 = tkinter.Label(window, image=image1)
+image1 = PhotoImage(file="sqr\빨간기둥1.png", master=window)
+label1 = Label(window, image=image1)
 label1.pack()
 
-image2 = tkinter.PhotoImage(file="sqr\노란기둥1.png", master=window)
-label2 = tkinter.Label(window, image=image2)
+image2 = PhotoImage(file="sqr\노란기둥1.png", master=window)
+label2 = Label(window, image=image2)
 label2.pack()
 
-image3 = tkinter.PhotoImage(file="sqr\초록기둥1.png", master=window)
-label3 = tkinter.Label(window, image=image3)
+image3 = PhotoImage(file="sqr\초록기둥1.png", master=window)
+label3 = Label(window, image=image3)
 label3.pack()
 
-image0 = tkinter.PhotoImage(file="sqr\sqe.png", master=window)
-label0 = tkinter.Label(window, image=image0)
+image0 = PhotoImage(file="sqr\sqe.png", master=window)
+label0 = Label(window, image=image0)
 label0.pack()
 
 ####흰 사각형 위치
@@ -1231,21 +1282,33 @@ label0.place(x=100, y=500)
 
 ####for문을 이용해 0.01초마다 사각형 위치 바꿔서 이동
 for i in range(1, 50):
-    label1.place(x=100, y=1000 / i + 300)  ########   +뒤에 오는 값들은 앞선 코드에서 불러온 정보들을 이용해서 계산 추후 수정 필요
+    label1.place(x=100, y=1000 / i + 220+50*ie)  ########  ie값 맞춰서 요리재료에 따른 사각형 줄어듬
     window.update()
     time.sleep(0.01)
-    label2.place(x=219, y=1000 / i + 250)  #############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@####감점 살짝 y축 조정하는 방식
+    label2.place(x=219, y=1000 / i + 220)  ##############################################################################요리방범 아직 미구현
     window.update()
     time.sleep(0.01)
-    label3.place(x=340, y=1000 / i + 250)
+    label3.place(x=340, y=1000 / i + 220 +50*t1)  #########시간에 따른 600초마다 y 50만큼 감점
     window.update()
     time.sleep(0.01)
 
 ####텍스트 출력
-label = tkinter.Label(window, text="Good Job!",
-                      font=("Times", "16"))  #####텍스트, 폰트, 크기가 있음. 위치 조정 필요, if문 이용한 상황별 메세지 출력 필요.
-label.pack()
+label111 = Label(window, text=" GOOD JOB", font=("Times", "30"))
+label11 = Label(window, text=" 토마토로 만든 참치, 가지로 만든 대체 장어 등 ‘식물 기반 대체 해산물 식품’ 분야가 새롭게 주목받고 있다.", font=("Times", "10"))  #####텍스트, 폰트, 크기가 있음. 위치 조정 필요, if문 이용한 상황별 메세지 출력 필요.
+label22 = Label(window, text=" 이미 미국에서는 식물 기반 대체식품 중 약 29%를 대체 해산물이 차지할 정도로 널리 사용되고 있다.", font=("Times", "10"))
+label33 = Label(window, text=" 해양 생태계 파괴나 중금속 및 미세 플라스틱 섭취 문제 등을 해결하기 위해 개발된 만큼 환경에 대한 경각심을 가지며", font=("Times", "10"))
+label44 = Label(window, text=" 대체 해산물을 적극적으로 소비할 수 있게 되길 바란다.", font=("Times", "10"))
+label111.pack()
+label111.place(x=250, y=100)
 
+label11.pack()
+label11.place(x=470, y=300)
+label22.pack()
+label22.place(x=470, y=330)
+label33.pack()
+label33.place(x=470, y=360)
+label44.pack()
+label44.place(x=470, y=390)
 ######메뉴 돌아가는 버튼 제작 필요
 
 

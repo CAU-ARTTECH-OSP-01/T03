@@ -22,7 +22,6 @@ def next_level_pollo():
             btn_fishdish.destroy()
             btn_chicken.destroy()
 
-
             def press2():
                 window.destroy()
 
@@ -43,23 +42,25 @@ def next_level_pollo():
             def ingredient4():
                 ibtn = Button(window, text="무를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=3)
+                
 
             photo1 = PhotoImage(file="mosaic/고추2_moza.png")
             btn1 = Button(window, width=200, height=200, image=photo1, command=ingredient1)
-            btn1.pack(side=LEFT)
+            btn1.grid(row=0, column=0)
 
             photo2 = PhotoImage(file="mosaic/물_moza.png")
             btn2 = Button(window, width=200, height=200, image=photo2, command=ingredient2)
-            btn2.pack()
+            btn2.grid(row=0, column=1)
 
             photo3 = PhotoImage(file="mosaic/무_moza.png")
             btn3 = Button(window, width=200, height=200, image=photo3, command=ingredient3)
-            btn3.pack()
+            btn3.grid(row=0, column=2)
 
             photo4 = PhotoImage(file="mosaic/고등어조림2_moza.png")
             btn4 = Button(window, width=200, height=200, image=photo4, command=ingredient4)
-            btn4.pack()
+            btn4.grid(row=0, column=3)
 
+            window.mainloop()
 
 
         def chicken():
