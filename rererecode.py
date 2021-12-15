@@ -1065,7 +1065,7 @@ def next_level_vegan():
                                                 command=aruguala_pizza)
         btn_aruguala_pizza.pack()
 
-        photo_ratatouille= PhotoImage(file="mosaic/고등어조림01.png")  # 찜닭
+        photo_ratatouille= PhotoImage(file="mosaic/고등어조림01 .png")  # 찜닭
         btn_ratatouille = Button(window, width=200, height=200, image=photo_ratatouille,
                                      command=ratatouille)
         btn_ratatouille.pack()

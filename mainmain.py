@@ -1094,7 +1094,7 @@ def new_menu():
 
 
 photo = PhotoImage(file="select-graphic/starticon.png")
-button = Button(window, width=400, height=400, image=photo, command=press1)
+button = Button(window, width=600, height=400, image=photo, command=press1)
 button.grid(row=0, column=1)
 
 photo_pollo = PhotoImage(file="select-graphic/Pollo-vegetarian.png")
@@ -1164,7 +1164,7 @@ def new_menu():
 
 
 photo = PhotoImage(file="select-graphic/starticon.png")
-button = Button(window, width=400, height=400, image=photo, command=press1)
+button = Button(window, width=600, height=400, image=photo, command=press1)
 button.grid(row=0, column=1)
 
 photo_pollo = PhotoImage(file="select-graphic/Pollo-vegetarian.png")
