@@ -217,6 +217,9 @@ def next_level_pollo():
 
         window.mainloop()
 
+    wall = PhotoImage(file="select-graphic/backgrond.png")
+    wall_label = Label(image=wall)
+    wall_label.place(x=-2, y=-2)
 
     btn_open_menu = Button(window, text='Hi Veginner! 이번 단계의 요리 공개!', command=press_next)
     btn_open_menu.pack(side=TOP)
@@ -433,6 +436,10 @@ def next_level_pesco():
 
         window.mainloop()
 
+    wall = PhotoImage(file="select-graphic/backgrond.png")
+    wall_label = Label(image=wall)
+    wall_label.place(x=-2, y=-2)
+
     btn_open_menu = Button(window, text='Hi Veginner! 이번 단계의 요리 공개!', command=press_next)
     btn_open_menu.pack(side=TOP)
 
@@ -645,6 +652,10 @@ def next_level_lacto_ovo():
         btn_tofu_steak.pack()
 
         window.mainloop()
+
+    wall = PhotoImage(file="select-graphic/backgrond.png")
+    wall_label = Label(image=wall)
+    wall_label.place(x=-2, y=-2)
 
     btn_open_menu = Button(window, text='Hi Veginner! 이번 단계의 요리 공개!', command=press_next)
     btn_open_menu.pack(side=TOP)
@@ -1091,9 +1102,13 @@ def new_menu():
     window.geometry("1000x1000")
     window.title("Veginner")
 
+    wall = PhotoImage(file="select-graphic/backgrond.png")
+    wall_label = Label(image=wall)
+    wall_label.place(x=-2, y=-2)
+
 
 photo = PhotoImage(file="select-graphic/starticon.png")
-button = Button(window, width=400, height=400, image=photo, command=press1)
+button = Button(window, width=600, height=400, image=photo, command=press1)
 button.grid(row=0, column=1)
 
 photo_pollo = PhotoImage(file="select-graphic/Pollo-vegetarian.png")
@@ -1163,7 +1178,7 @@ def new_menu():
 
 
 photo = PhotoImage(file="select-graphic/starticon.png")
-button = Button(window, width=400, height=400, image=photo, command=press1)
+button = Button(window, width=600, height=400, image=photo, command=press1)
 button.grid(row=0, column=1)
 
 photo_pollo = PhotoImage(file="select-graphic/Pollo-vegetarian.png")
@@ -1192,6 +1207,7 @@ def pressed():
 window.mainloop()
 window = Tk()
 window.geometry("1000x1000")
+
 
 
 def todo1():
