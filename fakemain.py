@@ -214,19 +214,19 @@ def next_level_pollo():
 
             window.mainloop()
 
-        photo_fishdish = PhotoImage(file="mosaic/고등어조림01.png")
-        btn_fishdish = Button(window, width=200, height=200, image=photo_fishdish, command=fishdish)
+        wall = PhotoImage(file="select-graphic/tofsteakwansung.png")
+        wall_label = Label(image=wall)
+        wall_label.place(x=-2, y=-2)
+
+        photo_fishdish = PhotoImage(file="select-graphic/godeuguhjolim.png")
+        btn_fishdish = Button(window, width=650, height=150, image=photo_fishdish, command=fishdish)
         btn_fishdish.pack()
 
-        photo_chicken = PhotoImage(file="mosaic/고등어조림01.png")  # 찜닭
-        btn_chicken = Button(window, width=200, height=200, image=photo_chicken, command=chicken)
+        photo_chicken = PhotoImage(file="select-graphic/jjimdak.png")  # 찜닭
+        btn_chicken = Button(window, width=650, height=150, image=photo_chicken, command=chicken)
         btn_chicken.pack()
 
         window.mainloop()
-
-    wall = PhotoImage(file="select-graphic/backgrond.png")
-    wall_label = Label(image=wall)
-    wall_label.place(x=-2, y=-2)
 
     btn_open_menu = Button(window, text='Hi Veginner! 이번 단계의 요리 공개!', command=press_next)
     btn_open_menu.pack(side=TOP)
