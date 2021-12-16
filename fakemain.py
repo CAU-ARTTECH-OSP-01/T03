@@ -69,7 +69,7 @@ def next_level_pollo():
                 ibtn = Button(window, text="양념을 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
 
-            wall = PhotoImage(file="select-graphic/doma.png")
+            wall = PhotoImage(file="select-graphic/lastdoma.png")
             wall_label = Label(image=wall)
             wall_label.place(x=-2, y=-2)
 
@@ -166,7 +166,7 @@ def next_level_pollo():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
 
-            wall = PhotoImage(file="select-graphic/doma.png")
+            wall = PhotoImage(file="select-graphic/lastdoma.png")
             wall_label = Label(image=wall)
             wall_label.place(x=-2, y=-2)
 
@@ -214,7 +214,7 @@ def next_level_pollo():
 
             window.mainloop()
 
-        wall = PhotoImage(file="select-graphic/tofsteakwansung.png")
+        wall = PhotoImage(file="select-graphic/tofusteakwansung.png")
         wall_label = Label(image=wall)
         wall_label.place(x=-2, y=-2)
 
