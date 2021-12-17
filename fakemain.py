@@ -14,6 +14,7 @@ def next_level_pollo():
     btn_vegan.destroy()
     new_menu()
 
+
     def press_next():
         btn_open_menu.destroy()
 
@@ -65,48 +66,50 @@ def next_level_pollo():
                 ibtn.grid(row=1, column=3)
 
             def ingredient10():
-                ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
+                ibtn = Button(window, text="양념을 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
 
+            wall = PhotoImage(file="select-graphic/lastdoma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
 
-
-            photo1 = PhotoImage(file="mosaic/양파_moza.png")
+            photo1 = PhotoImage(file="폴로베지테리언-고등어조림/avocado.png") #아보카도 fake
             btn1 = Button(window, width=200, height=200, image=photo1, command=ingredient1)
             btn1.grid(row=0, column=0)
 
-            photo2 = PhotoImage(file="mosaic/고추2_moza.png")
+            photo2 = PhotoImage(file="폴로베지테리언-고등어조림/blueberry.png") #블루베리 fake
             btn2 = Button(window, width=200, height=200, image=photo2, command=ingredient2)
             btn2.grid(row=0, column=1)
 
-            photo3 = PhotoImage(file="mosaic/대파,쪽파_moza.png")
+            photo3 = PhotoImage(file="폴로베지테리언-고등어조림/godeongeou.png") #고등어
             btn3 = Button(window, width=200, height=200, image=photo3, command=ingredient3)
             btn3.grid(row=0, column=2)
 
-            photo4 = PhotoImage(file="mosaic/무_moza.png")
+            photo4 = PhotoImage(file="폴로베지테리언-고등어조림/mu.png") # 무
             btn4 = Button(window, width=200, height=200, image=photo4, command=ingredient4)
             btn4.grid(row=0, column=3)
 
-            photo5 = PhotoImage(file="mosaic/아보카도_moza.png")
+            photo5 = PhotoImage(file="폴로베지테리언-고등어조림/onion.png") # 양파
             btn5 = Button(window, width=200, height=200, image=photo5, command=ingredient5)
             btn5.grid(row=0, column=4)
 
-            photo6 = PhotoImage(file="mosaic/생선_moza.png") #손질된 고등어
+            photo6 = PhotoImage(file="폴로베지테리언-고등어조림/pa.png") #파
             btn6 = Button(window, width=200, height=200, image=photo6, command=ingredient6)
             btn6.grid(row=1, column=0)
 
-            photo7 = PhotoImage(file="mosaic/해산물_moza.png") #새우
+            photo7 = PhotoImage(file="폴로베지테리언-고등어조림/pepper.png") #고추
             btn7 = Button(window, width=200, height=200, image=photo7, command=ingredient7)
             btn7.grid(row=1, column=1)
 
-            photo8 = PhotoImage(file="mosaic/물_moza.png")
+            photo8 = PhotoImage(file="폴로베지테리언-고등어조림/sauce.png") # 양념
             btn8 = Button(window, width=200, height=200, image=photo8, command=ingredient8)
             btn8.grid(row=1, column=2)
 
-            photo9 = PhotoImage(file="mosaic/크림치즈_moza.png") #피자치즈
+            photo9 = PhotoImage(file="폴로베지테리언-고등어조림/seow.png") #새우 fake
             btn9 = Button(window, width=200, height=200, image=photo9, command=ingredient9)
             btn9.grid(row=1, column=3)
 
-            photo10 = PhotoImage(file="mosaic/케첩_moza.png") #양념
+            photo10 = PhotoImage(file="폴로베지테리언-찜닭/water.png") #물
             btn10 = Button(window, width=200, height=200, image=photo10, command=ingredient10)
             btn10.grid(row=1, column=4)
 
@@ -163,60 +166,67 @@ def next_level_pollo():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
 
+            wall = PhotoImage(file="select-graphic/lastdoma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
 
 
-            photo11 = PhotoImage(file="mosaic/양파_moza.png")
+
+            photo11 = PhotoImage(file="폴로베지테리언-찜닭/bread.png") # 식빵 fake
             btn11 = Button(window, width=200, height=200, image=photo11, command=ingredient11)
             btn11.grid(row=0, column=0)
 
-            photo12 = PhotoImage(file="mosaic/고추2_moza.png")
+            photo12 = PhotoImage(file="폴로베지테리언-찜닭/carrot.png") # 당근
             btn12 = Button(window, width=200, height=200, image=photo12, command=ingredient12)
             btn12.grid(row=0, column=1)
 
-            photo13 = PhotoImage(file="mosaic/대파,쪽파_moza.png")
+            photo13 = PhotoImage(file="폴로베지테리언-찜닭/chicken.png") #닭
             btn13 = Button(window, width=200, height=200, image=photo13, command=ingredient13)
             btn13.grid(row=0, column=2)
 
-            photo14 = PhotoImage(file="mosaic/무_moza.png")
+            photo14 = PhotoImage(file="폴로베지테리언-찜닭/dangmyeon.png") #당면
             btn14 = Button(window, width=200, height=200, image=photo14, command=ingredient14)
             btn14.grid(row=0, column=3)
 
-            photo15 = PhotoImage(file="mosaic/아보카도_moza.png")
+            photo15 = PhotoImage(file="폴로베지테리언-찜닭/gamza.png") #감자
             btn15 = Button(window, width=200, height=200, image=photo15, command=ingredient15)
             btn15.grid(row=0, column=4)
 
-            photo16 = PhotoImage(file="mosaic/생선_moza.png") #손질된 고등어
+            photo16 = PhotoImage(file="폴로베지테리언-찜닭/pa.png") #파
             btn16 = Button(window, width=200, height=200, image=photo16, command=ingredient16)
             btn16.grid(row=1, column=0)
 
-            photo17 = PhotoImage(file="mosaic/해산물_moza.png") #새우
+            photo17 = PhotoImage(file="폴로베지테리언-찜닭/pepper.png") #고추
             btn17 = Button(window, width=200, height=200, image=photo17, command=ingredient17)
             btn17.grid(row=1, column=1)
 
-            photo18 = PhotoImage(file="mosaic/물_moza.png")
+            photo18 = PhotoImage(file="폴로베지테리언-찜닭/sauce.png") #양념
             btn18 = Button(window, width=200, height=200, image=photo18, command=ingredient18)
             btn18.grid(row=1, column=2)
 
-            photo19 = PhotoImage(file="mosaic/크림치즈_moza.png") #피자치즈
+            photo19 = PhotoImage(file="폴로베지테리언-찜닭/tomato.png") #토마토 fake
             btn19 = Button(window, width=200, height=200, image=photo19, command=ingredient19)
             btn19.grid(row=1, column=3)
 
-            photo20 = PhotoImage(file="mosaic/케첩_moza.png") #양념
+            photo20 = PhotoImage(file="폴로베지테리언-찜닭/water.png") #물
             btn20 = Button(window, width=200, height=200, image=photo20, command=ingredient20)
             btn20.grid(row=1, column=4)
 
             window.mainloop()
 
-        photo_fishdish = PhotoImage(file="mosaic/고등어조림01.png")
-        btn_fishdish = Button(window, width=200, height=200, image=photo_fishdish, command=fishdish)
+        wall = PhotoImage(file="select-graphic/tofusteakwansung.png")
+        wall_label = Label(image=wall)
+        wall_label.place(x=-2, y=-2)
+
+        photo_fishdish = PhotoImage(file="select-graphic/godeuguhjolim.png")
+        btn_fishdish = Button(window, width=650, height=150, image=photo_fishdish, command=fishdish)
         btn_fishdish.pack()
 
-        photo_chicken = PhotoImage(file="mosaic/고등어조림01.png")  # 찜닭
-        btn_chicken = Button(window, width=200, height=200, image=photo_chicken, command=chicken)
+        photo_chicken = PhotoImage(file="select-graphic/jjimdak.png")  # 찜닭
+        btn_chicken = Button(window, width=650, height=150, image=photo_chicken, command=chicken)
         btn_chicken.pack()
 
         window.mainloop()
-
 
     btn_open_menu = Button(window, text='Hi Veginner! 이번 단계의 요리 공개!', command=press_next)
     btn_open_menu.pack(side=TOP)
@@ -285,6 +295,10 @@ def next_level_pesco():
             def ingredient10():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
+
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
 
             photo1 = PhotoImage(file="mosaic/양파_moza.png")
             btn1 = Button(window, width=200, height=200, image=photo1, command=ingredient1)
@@ -379,6 +393,10 @@ def next_level_pesco():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
 
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
+
             photo11 = PhotoImage(file="mosaic/양파_moza.png")
             btn11 = Button(window, width=200, height=200, image=photo11, command=ingredient11)
             btn11.grid(row=0, column=0)
@@ -432,6 +450,10 @@ def next_level_pesco():
         btn_fishcake_burger.pack()
 
         window.mainloop()
+
+    wall = PhotoImage(file="select-graphic/backgrond.png")
+    wall_label = Label(image=wall)
+    wall_label.place(x=-2, y=-2)
 
     btn_open_menu = Button(window, text='Hi Veginner! 이번 단계의 요리 공개!', command=press_next)
     btn_open_menu.pack(side=TOP)
@@ -498,6 +520,10 @@ def next_level_lacto_ovo():
             def ingredient10():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
+
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
 
             photo1 = PhotoImage(file="mosaic/양파_moza.png")
             btn1 = Button(window, width=200, height=200, image=photo1, command=ingredient1)
@@ -592,6 +618,10 @@ def next_level_lacto_ovo():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
 
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
+
             photo11 = PhotoImage(file="mosaic/양파_moza.png")
             btn11 = Button(window, width=200, height=200, image=photo11, command=ingredient11)
             btn11.grid(row=0, column=0)
@@ -645,6 +675,10 @@ def next_level_lacto_ovo():
         btn_tofu_steak.pack()
 
         window.mainloop()
+
+    wall = PhotoImage(file="select-graphic/backgrond.png")
+    wall_label = Label(image=wall)
+    wall_label.place(x=-2, y=-2)
 
     btn_open_menu = Button(window, text='Hi Veginner! 이번 단계의 요리 공개!', command=press_next)
     btn_open_menu.pack(side=TOP)
@@ -711,6 +745,10 @@ def next_level_ovo():
             def ingredient10():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
+
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
 
             photo1 = PhotoImage(file="mosaic/양파_moza.png")
             btn1 = Button(window, width=200, height=200, image=photo1, command=ingredient1)
@@ -804,6 +842,10 @@ def next_level_ovo():
             def ingredient20():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
+
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
 
             photo11 = PhotoImage(file="mosaic/양파_moza.png")
             btn11 = Button(window, width=200, height=200, image=photo11, command=ingredient11)
@@ -925,6 +967,10 @@ def next_level_vegan():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
 
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
+
             photo1 = PhotoImage(file="mosaic/양파_moza.png")
             btn1 = Button(window, width=200, height=200, image=photo1, command=ingredient1)
             btn1.grid(row=0, column=0)
@@ -1018,6 +1064,10 @@ def next_level_vegan():
                 ibtn = Button(window, text="양념를 어떻게 요리하시겠습니까?", command=press2)
                 ibtn.grid(row=1, column=4)
 
+            wall = PhotoImage(file="select-graphic/doma.png")
+            wall_label = Label(image=wall)
+            wall_label.place(x=-2, y=-2)
+
             photo11 = PhotoImage(file="mosaic/양파_moza.png")
             btn11 = Button(window, width=200, height=200, image=photo11, command=ingredient11)
             btn11.grid(row=0, column=0)
@@ -1091,9 +1141,13 @@ def new_menu():
     window.geometry("1000x1000")
     window.title("Veginner")
 
+    wall = PhotoImage(file="select-graphic/backgrond.png")
+    wall_label = Label(image=wall)
+    wall_label.place(x=-2, y=-2)
+
 
 photo = PhotoImage(file="select-graphic/starticon.png")
-button = Button(window, width=400, height=400, image=photo, command=press1)
+button = Button(window, width=600, height=400, image=photo, command=press1)
 button.grid(row=0, column=1)
 
 photo_pollo = PhotoImage(file="select-graphic/Pollo-vegetarian.png")
@@ -1163,7 +1217,7 @@ def new_menu():
 
 
 photo = PhotoImage(file="select-graphic/starticon.png")
-button = Button(window, width=400, height=400, image=photo, command=press1)
+button = Button(window, width=600, height=400, image=photo, command=press1)
 button.grid(row=0, column=1)
 
 photo_pollo = PhotoImage(file="select-graphic/Pollo-vegetarian.png")
@@ -1189,6 +1243,41 @@ def pressed():
     window.destroy()
 
 
+window.mainloop()
+window = Tk()
+window.geometry("1000x1000")
+
+
+
+def todo1():
+    butt1.destroy()
+    ibutt = Button(window, text="다지기 선택!", command=press2)
+    ibutt.grid(row=3, column=3)
+    butt = Button(window, text="다지기 완료!", command=press2)
+    butt.grid(row=1, column=3)
+
+
+def todo2():
+    butt2.destroy()
+    ibutt = Button(window, text="볶기 선택!", command=press2)
+    ibutt.grid(row=3, column=3)
+    butt = Button(window, text="볶기 완료!", command=press2)
+    butt.grid(row=1, column=3)
+
+
+######################################################################################################################요리재료 감점 리스트 비교하기
+ie=0
+for i in ingri :
+    if i not in useringr :
+        print("useringri not containing :")
+        ie+=1
+for i in useringr :
+    if i not in ingri  :
+        print("ingri not containing :")
+        ie+=1
+
+print(ie)
+
 ########################################################################################################################감점
 e = 0
 photo01 = PhotoImage(file="mosaic/채썰기,다지기_moza.png")
@@ -1198,32 +1287,33 @@ butt1.grid(row=0, column=1)
 photo02 = PhotoImage(file="mosaic/볶기_moza.png")
 butt2 = Button(window, width=200, height=200, image=photo02, command=todo2)
 butt2.grid(row=0, column=2)
-
+window.mainloop()
 ###############################################################################################3단계
 
-import tkinter
 
-window = tkinter.Tk()
+t=time.time() - start
+print(t)
+t1=t/600
+window = Tk()
 window.geometry("1000x1000")
-window.title("tk")
 window.resizable(True, True)
-text = tkinter.Text(window)
+text = Text(window)
 
 ######기둥들과 사각형하나 이미지 불러오기 (사각형 이미지 하나 수정 필요)-사각형별 이미지 조정 필요
-image1 = tkinter.PhotoImage(file="sqr\빨간기둥1.png", master=window)
-label1 = tkinter.Label(window, image=image1)
+image1 = PhotoImage(file="sqr\빨간기둥1.png", master=window)
+label1 = Label(window, image=image1)
 label1.pack()
 
-image2 = tkinter.PhotoImage(file="sqr\노란기둥1.png", master=window)
-label2 = tkinter.Label(window, image=image2)
+image2 = PhotoImage(file="sqr\노란기둥1.png", master=window)
+label2 = Label(window, image=image2)
 label2.pack()
 
-image3 = tkinter.PhotoImage(file="sqr\초록기둥1.png", master=window)
-label3 = tkinter.Label(window, image=image3)
+image3 = PhotoImage(file="sqr\초록기둥1.png", master=window)
+label3 = Label(window, image=image3)
 label3.pack()
 
-image0 = tkinter.PhotoImage(file="sqr\sqe.png", master=window)
-label0 = tkinter.Label(window, image=image0)
+image0 = PhotoImage(file="sqr\sqe.png", master=window)
+label0 = Label(window, image=image0)
 label0.pack()
 
 ####흰 사각형 위치
@@ -1231,21 +1321,33 @@ label0.place(x=100, y=500)
 
 ####for문을 이용해 0.01초마다 사각형 위치 바꿔서 이동
 for i in range(1, 50):
-    label1.place(x=100, y=1000 / i + 300)  ########   +뒤에 오는 값들은 앞선 코드에서 불러온 정보들을 이용해서 계산 추후 수정 필요
+    label1.place(x=100, y=1000 / i + 220+50*ie)  ########  ie값 맞춰서 요리재료에 따른 사각형 줄어듬
     window.update()
     time.sleep(0.01)
-    label2.place(x=219, y=1000 / i + 250)  #############@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@####감점 살짝 y축 조정하는 방식
+    label2.place(x=219, y=1000 / i + 220)  ##############################################################################요리방범 아직 미구현
     window.update()
     time.sleep(0.01)
-    label3.place(x=340, y=1000 / i + 250)
+    label3.place(x=340, y=1000 / i + 220 +50*t1)  #########시간에 따른 600초마다 y 50만큼 감점
     window.update()
     time.sleep(0.01)
 
 ####텍스트 출력
-label = tkinter.Label(window, text="Good Job!",
-                      font=("Times", "16"))  #####텍스트, 폰트, 크기가 있음. 위치 조정 필요, if문 이용한 상황별 메세지 출력 필요.
-label.pack()
+label111 = Label(window, text=" GOOD JOB", font=("Times", "30"))
+label11 = Label(window, text=" 토마토로 만든 참치, 가지로 만든 대체 장어 등 ‘식물 기반 대체 해산물 식품’ 분야가 새롭게 주목받고 있다.", font=("Times", "10"))  #####텍스트, 폰트, 크기가 있음. 위치 조정 필요, if문 이용한 상황별 메세지 출력 필요.
+label22 = Label(window, text=" 이미 미국에서는 식물 기반 대체식품 중 약 29%를 대체 해산물이 차지할 정도로 널리 사용되고 있다.", font=("Times", "10"))
+label33 = Label(window, text=" 해양 생태계 파괴나 중금속 및 미세 플라스틱 섭취 문제 등을 해결하기 위해 개발된 만큼 환경에 대한 경각심을 가지며", font=("Times", "10"))
+label44 = Label(window, text=" 대체 해산물을 적극적으로 소비할 수 있게 되길 바란다.", font=("Times", "10"))
+label111.pack()
+label111.place(x=250, y=100)
 
+label11.pack()
+label11.place(x=470, y=300)
+label22.pack()
+label22.place(x=470, y=330)
+label33.pack()
+label33.place(x=470, y=360)
+label44.pack()
+label44.place(x=470, y=390)
 ######메뉴 돌아가는 버튼 제작 필요
 
 
