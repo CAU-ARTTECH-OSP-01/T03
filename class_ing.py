@@ -93,7 +93,7 @@ class SelectMaterial(tk.Frame):
         self.meterialCnt = 3
         self.materialImageList = []
         self.materialButtonList = []
-        
+
         # material image button
         for i in range(self.meterialCnt):
             self.materialImageList.append(tk.PhotoImage(file=imageNameList[0][i], master=self).subsample(2)) #ing
