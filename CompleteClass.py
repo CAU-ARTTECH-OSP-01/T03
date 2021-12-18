@@ -56,7 +56,7 @@ VegeterianImageNameList = ["first_select/Pollo-Vegetarian.png","first_select/Pes
 #단계별 음식 파일 이름(2개)
 LevelFoodFileList = ["폴로베지테리언-고등어조림/onion.png","폴로베지테리언-고등어조림/sunyangpa.png",  #1단계
                     "폴로베지테리언-찜닭/chicken.png","폴로베지테리언-찜닭/guunchicken.png",   #2단계
-                    "페스코-밀푀유나베/chicken.png","페스코-피시케이크버거/sunabocado.png",   #3단계
+                    "페스코-해산물밀푀유나베/chicken.png","페스코-피시케이크버거/sunabocado.png",   #3단계
                     "락토오보-토마토버섯샌드위치/ojing.png","락토오보-두부스테이크/breadgaru.png",   #4단계
                     "페스코-밀푀유나베/chicken.png","락토오보-토마토버섯샌드위치/guunpyogo.png"]  #5단계                    
 
@@ -64,31 +64,22 @@ LevelFoodFileList = ["폴로베지테리언-고등어조림/onion.png","폴로�
 
 MaterialFileList = [[["폴로베지테리언-고등어조림/onion.png","폴로베지테리언-고등어조림/sunyangpa.png"],["폴로베지테리언-고등어조림/pa.png","폴로베지테리언-고등어조림/sunpa.png"],["폴로베지테리언-고등어조림/pepper.png","폴로베지테리언-고등어조림/sungochu.png"],["폴로베지테리언-고등어조림/sauce.png","폴로베지테리언-고등어조림/sauce.png"],["폴로베지테리언-고등어조림/seow.png","폴로베지테리언-고등어조림/seow.png"],
 ["폴로베지테리언-고등어조림/mu.png","폴로베지테리언-고등어조림/sunmu.png"],["폴로베지테리언-고등어조림/blueberry.png","폴로베지테리언-고등어조림/blueberry.png"],["폴로베지테리언-고등어조림/godeongeou.png","폴로베지테리언-고등어조림/sonjil godeongeou.png"],["폴로베지테리언-고등어조림/avocado.png","폴로베지테리언-고등어조림/avocado.png"],["폴로베지테리언-고등어조림/water.png","폴로베지테리언-고등어조림/water.png"]], #1-1
-
-[["폴로베지테리언-찜닭/chicken.png","폴로베지테리언-찜닭/guunchicken.png"],["폴로베지테리언-찜닭/onion.png","폴로베지테리언-찜닭/sunyangpa.png"],["폴로베지테리언-찜닭/dangmyeon.png","폴로베지테리언-찜닭/bullin dangmyeon.png"],["폴로베지테리언-찜닭/bread.png","폴로베지테리언-찜닭/bread.png"],["폴로베지테리언-찜닭/gamza.png","폴로베지테리언-찜닭/sungamza.png"],
+[["폴로베지테리언-찜닭/chicken.png","폴로베지테리언-찜닭/guunchicken.png"],["폴로베지테리언-찜닭/carrot.png","폴로베지테리언-찜닭/danggeun.png"],["폴로베지테리언-찜닭/dangmyeon.png","폴로베지테리언-찜닭/bullin dangmyeon.png"],["폴로베지테리언-찜닭/bread.png","폴로베지테리언-찜닭/bread.png"],["폴로베지테리언-찜닭/gamza.png","폴로베지테리언-찜닭/sungamza.png"],
 ["폴로베지테리언-찜닭/pa.png","폴로베지테리언-찜닭/sunpa.png"],["폴로베지테리언-찜닭/pepper.png","폴로베지테리언-찜닭/sungochu.png"],["폴로베지테리언-찜닭/tomato.png","폴로베지테리언-찜닭/tomato.png"],["폴로베지테리언-찜닭/sauce.png","폴로베지테리언-찜닭/sauce.png"],["폴로베지테리언-찜닭/water.png","폴로베지테리언-찜닭/water.png"]], #1-2
-
-[["페스코-밀푀유나베/baechu.png","페스코-밀푀유나베/sunbaechu.png"],["페스코-밀푀유나베/chicken.png","페스코-밀푀유나베/chicken.png"],["페스코-밀푀유나베/dasima.png","페스코-밀푀유나베/dasima.png"],["페스코-밀푀유나베/joge.png","페스코-밀푀유나베/sonjil joge.png"],["페스코-밀푀유나베/ojing.png","페스코-밀푀유나베/sonjil ojing.png"],
-["페스코-밀푀유나베/pa.png","페스코-밀푀유나베/sunpa.png"],["페스코-밀푀유나베/pengmush.png","페스코-밀푀유나베/sunpengmush.png"],["페스코-밀푀유나베/pyogo.png","페스코-밀푀유나베/sunpyogo.png"],["페스코-밀푀유나베/sauce.png","페스코-밀푀유나베/sauce.png"],["페스코-밀푀유나베/seow.png","페스코-밀푀유나베/sonjil seow.png"]], #2-1
-
+[["페스코-해산물밀푀유나베/baechu.png","페스코-해산물밀푀유나베/sunbaechu.png"],["페스코-해산물밀푀유나베/chicken.png","페스코-해산물밀푀유나베/chicken.png"],["페스코-해산물밀푀유나베/dasima.png","페스코-해산물밀푀유나베/dasima.png"],["페스코-해산물밀푀유나베/joge.png","페스코-해산물밀푀유나베/sonjil joge.png"],["페스코-해산물밀푀유나베/ojing.png","페스코-해산물밀푀유나베/sonjil ojing.png"],
+["페스코-해산물밀푀유나베/pa.png","페스코-해산물밀푀유나베/sunpa.png"],["페스코-해산물밀푀유나베/pengmush.png","페스코-해산물밀푀유나베/sunpengmush.png"],["페스코-해산물밀푀유나베/pyogo.png","페스코-해산물밀푀유나베/sunpyogo.png"],["페스코-해산물밀푀유나베/sauce.png","페스코-해산물밀푀유나베/sauce.png"],["페스코-해산물밀푀유나베/seow.png","페스코-해산물밀푀유나베/sonjil seow.png"]], #2-1
 [["페스코-피시케이크버거/avocado.png","페스코-피시케이크버거/sunabocado.png"],["페스코-피시케이크버거/bun bread.png","페스코-피시케이크버거/bun bread.png"],["페스코-피시케이크버거/dangmyeon.png","페스코-피시케이크버거/dangmyeon.png"],["페스코-피시케이크버거/daegu.png","페스코-피시케이크버거/daegu.png"],["페스코-피시케이크버거/gamjajeonbun.png","페스코-피시케이크버거/gamjajeonbun.png"],
 ["페스코-피시케이크버거/jjokpa.png","페스코-피시케이크버거/dajinjjokpa.png"],["페스코-피시케이크버거/jukini.png","페스코-피시케이크버거/sunjukini.png"],["페스코-피시케이크버거/mayo.png","페스코-피시케이크버거/mayo.png"],["페스코-피시케이크버거/salad.png","페스코-피시케이크버거/salad.png"],["페스코-피시케이크버거/salt.png","페스코-피시케이크버거/salt.png"]], #2-2
-
 [["락토오보-토마토버섯샌드위치/ojing.png","락토오보-토마토버섯샌드위치/ojing.png"],["락토오보-토마토버섯샌드위치/bread.png","락토오보-토마토버섯샌드위치/guunbread.png"],["락토오보-토마토버섯샌드위치/cheese.png","락토오보-토마토버섯샌드위치/cheese.png"],["락토오보-토마토버섯샌드위치/mayo.png","락토오보-토마토버섯샌드위치/mayo.png"],["락토오보-토마토버섯샌드위치/oliveu.png","락토오보-토마토버섯샌드위치/oliveu.png"],
 ["락토오보-토마토버섯샌드위치/godeongeou.png","락토오보-토마토버섯샌드위치/godeongeou.png"],["락토오보-토마토버섯샌드위치/sunpyogo.png","락토오보-토마토버섯샌드위치/guunpyogo.png"],["락토오보-토마토버섯샌드위치/salt.png","락토오보-토마토버섯샌드위치/salt.png"],["락토오보-토마토버섯샌드위치/tomato.png","락토오보-토마토버섯샌드위치/suntomato.png"],["락토오보-토마토버섯샌드위치/seow.png","락토오보-토마토버섯샌드위치/seow.png"]], #3-1
-
 [["락토오보-두부스테이크/breadgaru.png","락토오보-두부스테이크/breadgaru.png"],["락토오보-두부스테이크/chicken.png","락토오보-두부스테이크/chicken.png"],["락토오보-두부스테이크/dobu.png","락토오보-두부스테이크/dajindubu.png"],["락토오보-두부스테이크/egg.png","락토오보-두부스테이크/egg.png"],["락토오보-두부스테이크/jjokpa.png","락토오보-두부스테이크/dajinjjokpa.png"],
 ["락토오보-두부스테이크/steak sauce.png","락토오보-두부스테이크/steak sauce.png"],["락토오보-두부스테이크/salt.png","락토오보-두부스테이크/salt.png"],["락토오보-두부스테이크/onion.png","락토오보-두부스테이크/dajinyangpa.png"],["락토오보-두부스테이크/joge.png","락토오보-두부스테이크/joge.png"],["락토오보-두부스테이크/oliveu.png","락토오보-두부스테이크/oliveu.png"]], #3-2
-
 [["오보-토마토달걀볶음/chicken.png","오보-토마토달걀볶음/chicken.png"],["오보-토마토달걀볶음/chopped garlic.png","오보-토마토달걀볶음/chopped garlic.png"],["오보-토마토달걀볶음/egg.png","오보-토마토달걀볶음/scrambled egg.png"],["오보-토마토달걀볶음/oliveu.png","오보-토마토달걀볶음/oliveu.png"],["오보-토마토달걀볶음/godeongeou.png","오보-토마토달걀볶음/godeongeou.png"],
 ["오보-토마토달걀볶음/pa.png","오보-토마토달걀볶음/sunpa.png"],["오보-토마토달걀볶음/salt.png","오보-토마토달걀볶음/salt.png"],["오보-토마토달걀볶음/seow.png","오보-토마토달걀볶음/seow.png"],["오보-토마토달걀볶음/tomato.png","오보-토마토달걀볶음/suntomato.png"],["오보-토마토달걀볶음/joge.png","오보-토마토달걀볶음/joge.png"]], #4-1
-
 [["오보-감자크로켓/breadgaru.png","오보-감자크로켓/breadgaru.png"],["오보-감자크로켓/carrot.png","오보-감자크로켓/dajindanggeun.png"],["오보-감자크로켓/tomato.png","오보-감자크로켓/tomato.png"],["오보-감자크로켓/egg.png","오보-감자크로켓/egg.png"],["오보-감자크로켓/sungamza.png","오보-감자크로켓/dajingamza.png"],
 ["오보-감자크로켓/salt.png","오보-감자크로켓/salt.png"],["오보-감자크로켓/gaji.png","오보-감자크로켓/gaji.png"],["오보-감자크로켓/milgaru.png","오보-감자크로켓/milgaru.png"],["오보-감자크로켓/onion.png","오보-감자크로켓/dajinyangpa.png"],["오보-감자크로켓/dangmyeon.png","오보-감자크로켓/dangmyeon.png"]], #4-2
-
 [["비건-루꼴라피자/blalckolive.png","비건-루꼴라피자/blackolive.png"],["비건-루꼴라피자/egg.png","비건-루꼴라피자/egg.png"],["비건-루꼴라피자/cheese.png","비건-루꼴라피자/cheese.png"],["비건-루꼴라피자/dangmyeon.png","비건-루꼴라피자/dangmyeon.png"],["비건-루꼴라피자/luggola.png","비건-루꼴라피자/luggola.png"],
 ["비건-루꼴라피자/onion.png","비건-루꼴라피자/sunyangpa.png"],["비건-루꼴라피자/pita bread.png","비건-루꼴라피자/pita bread.png"],["비건-루꼴라피자/salt.png","비건-루꼴라피자/salt.png"],["비건-루꼴라피자/sikcho.png","비건-루꼴라피자/sikcho.png"],["비건-루꼴라피자/tomato sauce.png","비건-루꼴라피자/tomato sauce.png"]], #5-1
-
 [["비건-라따뚜이/godeongeou.png","비건-라따뚜이/godeongeou.png"],["비건-라따뚜이/gaji.png","비건-라따뚜이/sungaji.png"],["비건-라따뚜이/salt.png","비건-라따뚜이/salt.png"],["비건-라따뚜이/jukini.png","비건-라따뚜이/sunjukini.png"],["비건-라따뚜이/oliveu.png","비건-라따뚜이/oliveu.png"],
 ["비건-라따뚜이/chicken.png","비건-라따뚜이/chicken.png"],["비건-라따뚜이/onion.png","비건-라따뚜이/sunyangpa.png"],["비건-라따뚜이/tomato sauce.png","비건-라따뚜이/tomato sauce.png"],["비건-라따뚜이/tomato.png","비건-라따뚜이/ssuntomato.png"],["비건-라따뚜이/water.png","비건-라따뚜이/water.png"]]] #5-2
 
@@ -97,19 +88,19 @@ MaterialFileList = [[["폴로베지테리언-고등어조림/onion.png","폴로�
 MaterialDoneList = [[False]*10 for _ in range(10)]
 
 #real 재료 개수(고정)
-RightMateCnt =[7,8,8,8,7,8,6,8,8,8]
+RightMateCnt = [7, 8, 9, 9, 7, 8, 6, 7, 8, 8]
 
 #real 재료 위치 (이걸로 재료 real,fake 위치 조절, 이거 대로 MaterialFileList file 그림도 변경)
-RightMaterialPosList = [[True,True,True,True,True,True,True,False,False,False],  #1-1
-                    [True,True,True,True,True,True,True,True,False,False],  #1-2
-                    [True,True,True,True,True,True,True,True,False,False],
-                    [True,True,True,True,True,True,True,True,False,False],
-                    [True,True,True,True,True,True,True,False,False,False],
-                    [True,True,True,True,True,True,True,True,False,False],
-                    [True,True,True,True,True,True,False,False,False,False],
-                    [True,True,True,True,True,True,True,True,False,False],
-                    [True,True,True,True,True,True,True,True,False,False],
-                    [True,True,True,True,True,True,True,True,False,False],]
+RightMaterialPosList = [[True, True, True, True, False, True, False, True, False, True],  # 1-1
+                        [True, True, True, False, True, True, True, False, True, True],  # 1-2
+                        [True, False, True, True, True, True, True, True, True, True],
+                        [True, True, False, True, True, True, True, True, True, True],
+                        [False, True, True, True, True, False, True, True, True, False],
+                        [True, False, True, True, True, True, True, True, False, True],
+                        [False, True, True, True, False, True, True, False, True, False],
+                        [True, True, False, True, True, True, False, True, True, False],
+                        [True, False, True, False, True, True, True, True, True, True],
+                        [False, True, True, True, True, False, True, True, True, True]]
 
 #맞는 조리 위치(일단 무조건 왼쪽 버튼이 맞는 조리법, 오른쪽이면 감점)
 RightTrimPosList = [[0,0,0,0,0,0,0,0,0,0],  #1-1
@@ -128,7 +119,7 @@ TrimList = ["조리법/채썰기,다지기_moza.png","조리법/볶기_moza.png"
 
 #조리 리스트에 맞게 각 재료들 숫자로 넣자 ex) 고등어 써는 조리- TrimList의 1번 (이건 진짜 조리법 리스트)
 EachMateTrim = [[1,1,1,0,0,1,0,1,0,0], #1-1
-                [2,1,4,0,1,1,1,0,0,0], #1-2
+                [2,1,0,0,1,1,1,0,0,0], #1-2
                 [1,0,0,1,1,1,1,1,0,1], 
                 [1,0,0,0,0,1,1,0,0,0],
                 [0,2,0,0,0,0,2,0,1,0],
