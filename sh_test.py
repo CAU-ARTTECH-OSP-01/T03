@@ -53,11 +53,11 @@ VegeterianImageNameList = ["first_select/Pollo-Vegetarian.png", "first_select/Pe
                            "first_select/Vegan.png"]
 
 # 단계별 음식 파일 이름(2개)
-LevelFoodFileList = ["폴로베지테리언-고등어조림/onion.png", "폴로베지테리언-고등어조림/sunyangpa.png",  # 1단계
-                     "폴로베지테리언-찜닭/chicken.png", "폴로베지테리언-찜닭/guunchicken.png",  # 2단계
-                     "페스코-밀푀유나베/chicken.png", "페스코-피시케이크버거/sunabocado.png",  # 3단계
-                     "락토오보-토마토버섯샌드위치/ojing.png", "락토오보-두부스테이크/breadgaru.png",  # 4단계
-                     "페스코-밀푀유나베/chicken.png", "락토오보-토마토버섯샌드위치/guunpyogo.png"]  # 5단계
+LevelFoodFileList = ["hangeul_menu/godeuguhjolim.png", "hangeul_menu/jjimdak.png",  # 1단계
+                     "hangeul_menu/haesanmulmilfeunabe.png", "hangeul_menu/fishcakeburger.png",  # 2단계
+                     "hangeul_menu/tomatobusutsandwich.png", "hangeul_menu/tofusteak.png",  # 3단계
+                     "hangeul_menu/tomatoeggbokkem.png", "hangeul_menu/gamjagoroke.png",  # 4단계
+                     "hangeul_menu/luccolapizza.png", "hangeul_menu/lattaddoi.png"]  # 5단계
 
 MaterialFileList = [
     [["폴로베지테리언-고등어조림/onion.png", "폴로베지테리언-고등어조림/sunyangpa.png"], ["폴로베지테리언-고등어조림/pa.png", "폴로베지테리언-고등어조림/sunpa.png"],
@@ -69,7 +69,7 @@ MaterialFileList = [
      ["폴로베지테리언-고등어조림/avocado.png", "폴로베지테리언-고등어조림/avocado.png"],
      ["폴로베지테리언-고등어조림/water.png", "폴로베지테리언-고등어조림/water.png"]],  # 1-1
 
-    [["폴로베지테리언-찜닭/chicken.png", "폴로베지테리언-찜닭/guunchicken.png"], ["폴로베지테리언-찜닭/onion.png", "폴로베지테리언-찜닭/sunyangpa.png"],
+    [["폴로베지테리언-찜닭/chicken.png", "폴로베지테리언-찜닭/guunchicken.png"], ["폴로베지테리언-찜닭/carrot.png", "폴로베지테리언-찜닭/danggeun.png"],
      ["폴로베지테리언-찜닭/dangmyeon.png", "폴로베지테리언-찜닭/bullin dangmyeon.png"], ["폴로베지테리언-찜닭/bread.png", "폴로베지테리언-찜닭/bread.png"],
      ["폴로베지테리언-찜닭/gamza.png", "폴로베지테리언-찜닭/sungamza.png"],
      ["폴로베지테리언-찜닭/pa.png", "폴로베지테리언-찜닭/sunpa.png"], ["폴로베지테리언-찜닭/pepper.png", "폴로베지테리언-찜닭/sungochu.png"],
@@ -215,16 +215,22 @@ class Start(tk.Frame):
     def __init__(self, master):
         tk.Frame.__init__(self, master)
 
+        self.blank = tk.Label(self, text='', width = 1, height=50)
+        self.blank.grid(row=0, column=1)
+
         self.StartImage = tk.PhotoImage(file="first_select/starticon.png", master=self)
         self.StartButton = tk.Button(self, width=600, height=400, image=self.StartImage,
                                      command=lambda: master.switch_frame(Vegeterian))
-        self.StartButton.grid(row=0, column=1)
+        self.StartButton.grid(row=0, column=2)
 
 
 # 단계선택
 class Vegeterian(tk.Frame):
     def __init__(self, master):
         tk.Frame.__init__(self, master)
+
+        self.blank = tk.Label(self, text='', width=1, height=20)
+        self.blank.grid(row=0, column=0)
 
         init()  # 초기화 호출
         self.VegeterianCnt = 5
@@ -255,19 +261,23 @@ class SelectAndGo(tk.Frame):
         self.curLevel = currentSelect["Level"]
 
         # Open Button
-        self.Openbutton = tk.Button(self, text='Hi Veginner! ' + str(self.curLevel) + '번 단계의 요리 공개!',
-                                    command=self.onClickChallenge)
-        self.Openbutton.pack(anchor="center")
+        #self.Openbutton = tk.Button(self, text='Hi Veginner! ' + str(self.curLevel) + '번 단계의 요리 공개!',
+         #                           command=self.onClickChallenge)
+        #self.Openbutton.pack(anchor="center")
+        self.blank = tk.Label(self, text='', width=1, height=15)
+        self.blank.pack()
 
         # First Food Button
         self.FirstFoodImage = tk.PhotoImage(file=LevelFoodFileList[self.curLevel * 2], master=self)
-        self.FirstFoodBtn = tk.Button(self, padx=10, pady=10, image=self.FirstFoodImage,
+        self.FirstFoodBtn = tk.Button(self, padx=650, pady=150, image=self.FirstFoodImage,
                                       command=partial(self.onClickFood, master, self.curLevel * 2))
-
+        self.FirstFoodBtn.pack()
         # second Food Button
         self.SecondFoodImage = tk.PhotoImage(file=LevelFoodFileList[self.curLevel * 2 + 1], master=self)
-        self.SecondFoodBtn = tk.Button(self, padx=10, pady=10, image=self.SecondFoodImage,
+        self.SecondFoodBtn = tk.Button(self, padx=650, pady=150, image=self.SecondFoodImage,
                                        command=partial(self.onClickFood, master, self.curLevel * 2 + 1))
+        self.SecondFoodBtn.pack()
+
 
 
     def onClickChallenge(self):
@@ -376,6 +386,9 @@ class CompleteWindow(tk.Frame):
 # 결과
 class Result(tk.Frame):
     def __init__(self, master):
+        self.wall = tk.PhotoImage(file="background/nobackground.png")
+        self.wall_label = tk.Label(image=self.wall)
+        self.wall_label.place(x=-2, y=-2)
         tk.Frame.__init__(self, master)
 
         # 기둥 image

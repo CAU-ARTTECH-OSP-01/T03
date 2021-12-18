@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import tkinter as tk
 from functools import partial
 import time
@@ -49,7 +51,7 @@ tmiList =[("대체육에 이은 대체 해산물 개발\n토마토로 만든 참
         +"따라서 옥수수유, 해바라기유와 같은 비열대성 식물성 기름으로 대체하는 것이 건강에 더 좋다.")]#8
 
 #단계 선택 이미지 파일
-VegeterianImageNameList = ["select-graphic/Pollo-Vegetarian.png","select-graphic/Pesco-Vegetarian.png","select-graphic/Lacto-ovo-Vegetarian.png","select-graphic/Ovo-Vegetarian.png","select-graphic/Vegan.png"]
+VegeterianImageNameList = ["first_select/Pollo-Vegetarian.png","first_select/Pesco-Vegetarian.png","first_select/Lacto-ovo-Vegetarian.png","first_select/Ovo-Vegetarian.png","first_select/Vegan.png"]
 
 #단계별 음식 파일 이름(2개)
 LevelFoodFileList = ["폴로베지테리언-고등어조림/onion.png","폴로베지테리언-고등어조림/sunyangpa.png",  #1단계
