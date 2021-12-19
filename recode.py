@@ -57,7 +57,7 @@ VegeterianImageNameList = ["first_select/Pollo-Vegetarian.png", "first_select/Pe
 # 단계별 음식 파일 이름(2개)
 LevelFoodFileList = ["폴로베지테리언-고등어조림/onion.png", "폴로베지테리언-고등어조림/sunyangpa.png",  # 1단계
                      "폴로베지테리언-찜닭/chicken.png", "폴로베지테리언-찜닭/guunchicken.png",  # 2단계
-                     "페스코-밀푀유나베/chicken.png", "페스코-피시케이크버거/sunabocado.png",  # 3단계
+                     "페스코-해산물밀푀유나베/chicken.png", "페스코-피시케이크버거/sunabocado.png",  # 3단계
                      "락토오보-토마토버섯샌드위치/ojing.png", "락토오보-두부스테이크/breadgaru.png",  # 4단계
                      "페스코-밀푀유나베/chicken.png", "락토오보-토마토버섯샌드위치/guunpyogo.png"]  # 5단계
 
@@ -116,8 +116,8 @@ RightTrimPosList = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],  # 1-1
 TrimList = ["조리법/채썰기,다지기_moza.png", "조리법/볶기_moza.png", "조리법/으깨기,다지기2_moza.png", "조리법/끓이기,졸이기_moza.png"]
 
 # 조리 리스트에 맞게 각 재료들 숫자로 넣자 ex) 고등어 써는 조리- TrimList의 1번 (이건 진짜 조리법 리스트)
-EachMateTrim = [[1, 1, 1, 0, 0, 1, 0, 1, 0, 0],  # 1-1
-                [2, 1, 1, 0, 1, 1, 1, 0, 0, 0],  # 1-2
+EachMateTrim = [[0, 0, 0, 0, 4, 0, 4, 0, 4, 0],  # 1-1
+                [1, 0, 3, 4, 2, 2, 2, 4, 0, 0],  # 1-2
                 [1, 0, 0, 1, 1, 1, 1, 1, 0, 1],
                 [1, 0, 0, 0, 0, 1, 1, 0, 0, 0],
                 [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
@@ -245,7 +245,8 @@ class SelectMaterial(tk.Frame):
         if RightMaterialPosList[self.curFood][index] == True:
             currentSelect["Trim"] = index
             master.switch_frame(MaterialTrim)
-        # else:
+        else:
+            dedu += 1
         #####################감점 코드 위치###########################################
 
 
@@ -336,8 +337,8 @@ class Result(tk.Frame):
         self.tmi.grid(row=1, column=0, columnspan=3, sticky='W')
 
         for i in range(3):
-            self.yellowImage.append(tk.PhotoImage(file="sqr/노란기둥1.png", master=self))
-            self.yellowLabel.append(tk.Label(self, image=self.yellowImage[i], width=115, height=300))
+            self.yellowImage.append(tk.PhotoImage(file="sqr/초록기둥1.png", master=self))
+            self.yellowLabel.append(tk.Label(self, image=self.yellowImage[i], width=115, height=600))
             self.yellowLabel[i].grid(row=2, column=i, columnspan=4, sticky='W')
             # self.yellowLabel[i].place(x=self.xPos[i],y=100)
 
@@ -345,7 +346,7 @@ class Result(tk.Frame):
         # self.yellowLabel[0].place(x=self.xPos[0], y=1000 /  220+50)
         for i in range(2):
             for j in range(1, 50):
-                self.yellowLabel[i].place(x=self.xPos[i], y=1000 / j + 220 + 50)
+                self.yellowLabel[i].place(x=self.xPos[i], y= 1000 / j + 220 + 50)
                 self.update()
                 time.sleep(0.01)
 
