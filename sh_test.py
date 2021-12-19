@@ -240,7 +240,7 @@ class Vegeterian(tk.Frame):
         self.wall_label.place(x=-2, y=-2)
         tk.Frame.__init__(self, master)
 
-        self.blank = tk.Label(self, text='', width=1, height=20)
+        self.blank = tk.Label(self, text='', width=10, height=20)
         self.blank.grid(row=0, column=0)
 
         init()  # 초기화 호출
@@ -252,7 +252,7 @@ class Vegeterian(tk.Frame):
             self.VegeterianImgList.append(tk.PhotoImage(file=VegeterianImageNameList[i], master=self))
             self.VegeterianBtnList.append(tk.Button(self, width=710, height=90, image=self.VegeterianImgList[i],
                                                     command=partial(self.onClick, master, i)))
-            self.VegeterianBtnList[i].grid(row=i, column=0)
+            self.VegeterianBtnList[i].grid(row=i+1, column=0)
 
     def onClick(self, master, index):
         currentSelect["Level"] = index
