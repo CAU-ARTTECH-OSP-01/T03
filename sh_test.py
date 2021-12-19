@@ -149,19 +149,19 @@ MaterialFileList = [
 MaterialDoneList = [[False] * 10 for _ in range(10)]
 
 # real 재료 개수(고정)
-RightMateCnt = [7, 8, 8, 8, 7, 8, 6, 8, 8, 8]
+RightMateCnt = [7, 8, 9, 9, 7, 8, 6, 7, 8, 8]
 
 # real 재료 위치 (이걸로 재료 real,fake 위치 조절, 이거 대로 MaterialFileList file 그림도 변경)
-RightMaterialPosList = [[True, True, True, True, True, True, True, False, False, False],  # 1-1
-                        [True, True, True, True, True, True, True, True, False, False],  # 1-2
-                        [True, True, True, True, True, True, True, True, False, False],
-                        [True, True, True, True, True, True, True, True, False, False],
-                        [True, True, True, True, True, True, True, False, False, False],
-                        [True, True, True, True, True, True, True, True, False, False],
-                        [True, True, True, True, True, True, False, False, False, False],
-                        [True, True, True, True, True, True, True, True, False, False],
-                        [True, True, True, True, True, True, True, True, False, False],
-                        [True, True, True, True, True, True, True, True, False, False], ]
+RightMaterialPosList = [[True, True, True, True, False, True, False, True, False, True],  # 1-1
+                        [True, True, True, False, True, True, True, False, True, True],  # 1-2
+                        [True, False, True, True, True, True, True, True, True, True],
+                        [True, True, False, True, True, True, True, True, True, True],
+                        [False, True, True, True, True, False, True, True, True, False],
+                        [True, False, True, True, True, True, True, True, False, True],
+                        [False, True, True, True, False, True, True, False, True, False],
+                        [True, True, False, True, True, True, False, True, True, False],
+                        [True, False, True, False, True, True, True, True, True, True],
+                        [False, True, True, True, True, False, True, True, True, True]]
 
 # 맞는 조리 위치(일단 무조건 왼쪽 버튼이 맞는 조리법, 오른쪽이면 감점)
 RightTrimPosList = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],  # 1-1
@@ -179,16 +179,16 @@ RightTrimPosList = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],  # 1-1
 TrimList = ["조리법/chae_moza.png", "조리법/bokki_moza.png", "조리법/ewwkkegi.png", "조리법/ggeuligi.png"]
 
 # 조리 리스트에 맞게 각 재료들 숫자로 넣자 ex) 고등어 써는 조리- TrimList의 1번 (이건 진짜 조리법 리스트)
-EachMateTrim = [[1, 1, 1, 0, 0, 1, 0, 1, 0, 0],  # 1-1
-                [2, 1, 4, 0, 1, 1, 1, 0, 0, 0],  # 1-2
+EachMateTrim = [[0, 0, 0, 0, 4, 0, 4, 0, 4, 0],  # 1-1
+                [1, 0, 3, 4, 2, 2, 2, 4, 0, 0],  # 1-2
                 [1, 0, 0, 1, 1, 1, 1, 1, 0, 1],
                 [1, 0, 0, 0, 0, 1, 1, 0, 0, 0],
-                [0, 2, 0, 0, 0, 0, 2, 0, 1, 0],
-                [0, 0, 3, 0, 3, 0, 0, 3, 0, 0],
-                [0, 0, 2, 0, 0, 1, 0, 0, 1, 0],
-                [0, 1, 0, 0, 1, 0, 0, 0, 1, 0],
-                [0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
-                [0, 1, 0, 1, 0, 0, 1, 0, 1, 0], ]
+                [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                [1, 0, 3, 0, 3, 0, 0, 3, 0, 1],
+                [1, 0, 2, 0, 0, 1, 0, 0, 1, 0],
+                [1, 1, 0, 0, 1, 0, 0, 0, 1, 0],
+                [1, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+                [1, 1, 0, 1, 0, 0, 1, 0, 1, 0], ]
 
 currentSelect = {}
 
