@@ -168,7 +168,7 @@ RightTrimPosList = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],  # 1-1
                     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], ]
 
 # 조리 리스트 ex) 0- "볶기.png", 1-"썰기.png", 2-"다지기.png"
-TrimList = ["조리법/채썰기,다지기_moza.png", "조리법/볶기_moza.png", "조리법/으깨기,다지기2_moza.png", "조리법/끓이기,졸이기_moza.png"]
+TrimList = ["조리법/chae_moza.png", "조리법/bokki_moza.png", "조리법/ewwkkegi.png", "조리법/ggeuligi.png"]
 
 # 조리 리스트에 맞게 각 재료들 숫자로 넣자 ex) 고등어 써는 조리- TrimList의 1번 (이건 진짜 조리법 리스트)
 EachMateTrim = [[1, 1, 1, 0, 0, 1, 0, 1, 0, 0],  # 1-1
@@ -264,8 +264,9 @@ class SelectAndGo(tk.Frame):
         #self.Openbutton = tk.Button(self, text='Hi Veginner! ' + str(self.curLevel) + '번 단계의 요리 공개!',
          #                           command=self.onClickChallenge)
         #self.Openbutton.pack(anchor="center")
-        self.blank = tk.Label(self, text='', width=1, height=15)
-        self.blank.pack()
+        self.imgfile = tk.PhotoImage(file="background/jungan1.png")
+        self.blanks = tk.Label(self, image = self.imgfile)
+        self.blanks.pack()
 
         # First Food Button
         self.FirstFoodImage = tk.PhotoImage(file=LevelFoodFileList[self.curLevel * 2], master=self)
