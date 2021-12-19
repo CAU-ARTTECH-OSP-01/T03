@@ -235,6 +235,9 @@ class Start(tk.Frame):
 # 단계선택
 class Vegeterian(tk.Frame):
     def __init__(self, master):
+        self.wall = tk.PhotoImage(file="background/nobackground.png")
+        self.wall_label = tk.Label(image=self.wall)
+        self.wall_label.place(x=-2, y=-2)
         tk.Frame.__init__(self, master)
 
         self.blank = tk.Label(self, text='', width=1, height=20)
@@ -395,7 +398,7 @@ class CompleteWindow(tk.Frame):
 # 결과
 class Result(tk.Frame):
     def __init__(self, master):
-        self.wall = tk.PhotoImage(file="background/nobackground.png")
+        self.wall = tk.PhotoImage(file="background/joribubselect.png")
         self.wall_label = tk.Label(image=self.wall)
         self.wall_label.place(x=-2, y=-2)
         tk.Frame.__init__(self, master)
