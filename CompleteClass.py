@@ -53,12 +53,19 @@ tmiList =[("대체육에 이은 대체 해산물 개발\n토마토로 만든 참
 #단계 선택 이미지 파일
 VegeterianImageNameList = ["first_select/Pollo-Vegetarian.png","first_select/Pesco-Vegetarian.png","first_select/Lacto-ovo-Vegetarian.png","first_select/Ovo-Vegetarian.png","first_select/Vegan.png"]
 
-#단계별 음식 파일 이름(2개)
-LevelFoodFileList = ["폴로베지테리언-고등어조림/onion.png","폴로베지테리언-고등어조림/sunyangpa.png",  #1단계
-                    "폴로베지테리언-찜닭/chicken.png","폴로베지테리언-찜닭/guunchicken.png",   #2단계
-                    "페스코-해산물밀푀유나베/chicken.png","페스코-피시케이크버거/sunabocado.png",   #3단계
-                    "락토오보-토마토버섯샌드위치/ojing.png","락토오보-두부스테이크/breadgaru.png",   #4단계
-                    "페스코-밀푀유나베/chicken.png","락토오보-토마토버섯샌드위치/guunpyogo.png"]  #5단계                    
+#단계별 음식 파일 이름(2개) : 진행할 요리 고르기
+LevelFoodFileList = [".png",".png",  #1단계
+                    ".png",".png",   #2단계
+                    ".png",".png",   #3단계
+                    ".png",".png"",  #4단계
+                    ".png",".png"]  #5단계
+
+#완성된 요리 보여주기 - 296줄도 같이 수정하시면 됩니다
+CompleteFoodFileList = [".png",".png",  #1단계
+                        ".png",".png",   #2단계
+                        ".png",".png",   #3단계
+                        ".png",".png",   #4단계
+                        ".png",".png"]  #5단계
 
 
 
@@ -286,7 +293,7 @@ class CompleteWindow(tk.Frame):
         self.curFood = currentSelect["food"]
         
         #Complete Food Button
-        self.FoodImage = tk.PhotoImage(file=LevelFoodFileList[self.curFood],master=self)
+        self.FoodImage = tk.PhotoImage(file=CompleteFoodFileList[self.curFood],master=self)
         self.FoodBtn = tk.Button(self,height=1000, width=1000, image=self.FoodImage,command=partial(self.onclick,master))
         self.FoodBtn.pack()
 
