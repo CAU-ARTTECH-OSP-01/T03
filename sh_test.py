@@ -52,12 +52,20 @@ VegeterianImageNameList = ["first_select/Pollo-Vegetarian.png", "first_select/Pe
                            "first_select/Lacto-ovo-Vegetarian.png", "first_select/Ovo-Vegetarian.png",
                            "first_select/Vegan.png"]
 
-# 단계별 음식 파일 이름(2개)
+# 단계별 음식 파일 이름(2개): 진행할 요리 고르기
 LevelFoodFileList = ["hangeul_menu/godeuguhjolim.png", "hangeul_menu/jjimdak.png",  # 1단계
                      "hangeul_menu/haesanmulmilfeunabe.png", "hangeul_menu/fishcakeburger.png",  # 2단계
                      "hangeul_menu/tomatobusutsandwich.png", "hangeul_menu/tofusteak.png",  # 3단계
                      "hangeul_menu/tomatoeggbokkem.png", "hangeul_menu/gamjagoroke.png",  # 4단계
-                     "hangeul_menu/luccolapizza.png", "hangeul_menu/lattaddoi.png"]  # 5단계
+                     "hangeul_menu/lucoolapizza.png", "hangeul_menu/lattaddoi.png"]  # 5단계
+
+
+#완성된 요리 보여주기 - 296줄도 같이 수정하시면 됩니다
+CompleteFoodFileList = ["SUCCESS/s_godeunujorim.png","SUCCESS/s_jjimdak.png",  #1단계
+                        "SUCCESS/s_milfeunabe.png","SUCCESS/s_fishcakeburger.png",   #2단계
+                        "SUCCESS/tomatosandwich_final.png","SUCCESS/s_tofusteak.png",   #3단계
+                        "SUCCESS/s_tomatoeggfried.png","SUCCESS/s_gamzagoroke.png",   #4단계
+                        "SUCCESS/s_luccolapizza.png","SUCCESS/s_lataddoi.png"]  #5단계
 
 MaterialFileList = [
     [["폴로베지테리언-고등어조림/onion.png", "폴로베지테리언-고등어조림/sunyangpa.png"], ["폴로베지테리언-고등어조림/pa.png", "폴로베지테리언-고등어조림/sunpa.png"],
@@ -76,12 +84,12 @@ MaterialFileList = [
      ["폴로베지테리언-찜닭/tomato.png", "폴로베지테리언-찜닭/tomato.png"], ["폴로베지테리언-찜닭/sauce.png", "폴로베지테리언-찜닭/sauce.png"],
      ["폴로베지테리언-찜닭/water.png", "폴로베지테리언-찜닭/water.png"]],  # 1-2
 
-    [["페스코-밀푀유나베/baechu.png", "페스코-밀푀유나베/sunbaechu.png"], ["페스코-밀푀유나베/chicken.png", "페스코-밀푀유나베/chicken.png"],
-     ["페스코-밀푀유나베/dasima.png", "페스코-밀푀유나베/dasima.png"], ["페스코-밀푀유나베/joge.png", "페스코-밀푀유나베/sonjil joge.png"],
-     ["페스코-밀푀유나베/ojing.png", "페스코-밀푀유나베/sonjil ojing.png"],
-     ["페스코-밀푀유나베/pa.png", "페스코-밀푀유나베/sunpa.png"], ["페스코-밀푀유나베/pengmush.png", "페스코-밀푀유나베/sunpengmush.png"],
-     ["페스코-밀푀유나베/pyogo.png", "페스코-밀푀유나베/sunpyogo.png"], ["페스코-밀푀유나베/sauce.png", "페스코-밀푀유나베/sauce.png"],
-     ["페스코-밀푀유나베/seow.png", "페스코-밀푀유나베/sonjil seow.png"]],  # 2-1
+    [["페스코-해산물밀푀유나베/baechu.png", "페스코-해산물밀푀유나베/sunbaechu.png"], ["페스코-해산물밀푀유나베/chicken.png", "페스코-해산물밀푀유나베/chicken.png"],
+     ["페스코-해산물밀푀유나베/dasima.png", "페스코-해산물밀푀유나베/dasima.png"], ["페스코-해산물밀푀유나베/joge.png", "페스코-해산물밀푀유나베/sonjil joge.png"],
+     ["페스코-해산물밀푀유나베/ojing.png", "페스코-해산물밀푀유나베/sonjil ojing.png"],
+     ["페스코-해산물밀푀유나베/pa.png", "페스코-해산물밀푀유나베/sunpa.png"], ["페스코-해산물밀푀유나베/pengmush.png", "페스코-해산물밀푀유나베/sunpengmush.png"],
+     ["페스코-해산물밀푀유나베/pyogo.png", "페스코-해산물밀푀유나베/sunpyogo.png"], ["페스코-해산물밀푀유나베/sauce.png", "페스코-해산물밀푀유나베/sauce.png"],
+     ["페스코-해산물밀푀유나베/seow.png", "페스코-해산물밀푀유나베/sonjil seow.png"]],  # 2-1
 
     [["페스코-피시케이크버거/avocado.png", "페스코-피시케이크버거/sunabocado.png"],
      ["페스코-피시케이크버거/bun bread.png", "페스코-피시케이크버거/bun bread.png"],
@@ -123,7 +131,7 @@ MaterialFileList = [
      ["오보-감자크로켓/milgaru.png", "오보-감자크로켓/milgaru.png"], ["오보-감자크로켓/onion.png", "오보-감자크로켓/dajinyangpa.png"],
      ["오보-감자크로켓/dangmyeon.png", "오보-감자크로켓/dangmyeon.png"]],  # 4-2
 
-    [["비건-루꼴라피자/blalckolive.png", "비건-루꼴라피자/blackolive.png"], ["비건-루꼴라피자/egg.png", "비건-루꼴라피자/egg.png"],
+    [["비건-루꼴라피자/blackolive.png", "비건-루꼴라피자/blackolive.png"], ["비건-루꼴라피자/egg.png", "비건-루꼴라피자/egg.png"],
      ["비건-루꼴라피자/cheese.png", "비건-루꼴라피자/cheese.png"], ["비건-루꼴라피자/dangmyeon.png", "비건-루꼴라피자/dangmyeon.png"],
      ["비건-루꼴라피자/luggola.png", "비건-루꼴라피자/luggola.png"],
      ["비건-루꼴라피자/onion.png", "비건-루꼴라피자/sunyangpa.png"], ["비건-루꼴라피자/pita bread.png", "비건-루꼴라피자/pita bread.png"],
@@ -375,7 +383,7 @@ class CompleteWindow(tk.Frame):
         self.curFood = currentSelect["food"]
 
         # Complete Food Button
-        self.FoodImage = tk.PhotoImage(file=LevelFoodFileList[self.curFood], master=self)
+        self.FoodImage = tk.PhotoImage(file=CompleteFoodFileList[self.curFood], master=self)
         self.FoodBtn = tk.Button(self, height=1000, width=1000, image=self.FoodImage,
                                  command=partial(self.onclick, master))
         self.FoodBtn.pack()
