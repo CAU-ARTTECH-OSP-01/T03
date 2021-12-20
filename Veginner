@@ -183,7 +183,7 @@ MaterialFileList = [
      ["비건-라따뚜이/chicken.png", "비건-라따뚜이/chicken.png"], ["비건-라따뚜이/onion.png", "비건-라따뚜이/sunyangpa.png"],
      ["비건-라따뚜이/tomato sauce.png", "비건-라따뚜이/tomato sauce.png"], ["비건-라따뚜이/tomato.png", "비건-라따뚜이/ssuntomato.png"],
      ["비건-라따뚜이/water.png", "비건-라따뚜이/water.png"]]]  # 5-2
-
+ 
 # 재료 조리 완료 여부 - 완료되면 True : 조리 후 재료로 바뀜
 MaterialDoneList = [[False] * 10 for _ in range(10)]
 
