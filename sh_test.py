@@ -243,6 +243,7 @@ def init():
 class SampleApp(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
+
         tk.Tk.geometry(self, "1000x1000")
         self._frame = None
         self.switch_frame(Start)
@@ -311,7 +312,7 @@ class SelectAndGo(tk.Frame):
         self.curLevel = currentSelect["Level"]
 
         # Open Button
-        #self.Openbutton = tk.Button(self, text='Hi Veginner! ' + str(self.curLevel) + '번 단계의 요리 공개!',
+        #self.Openbutton = tk.Button(self, text='Hi tk! ' + str(self.curLevel) + '번 단계의 요리 공개!',
          #                           command=self.onClickChallenge)
         #self.Openbutton.pack(anchor="center")
         self.imgfile = tk.PhotoImage(file="background/jungan1.png")
