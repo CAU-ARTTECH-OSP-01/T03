@@ -481,7 +481,7 @@ class Result(tk.Frame):
                 time.sleep(0.01)
 
     def onClickExit(self, master):
-        master.quit()
+        master.quit() 
 
 
 if __name__ == '__main__':
