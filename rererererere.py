@@ -388,7 +388,7 @@ class Result(tk.Frame):
         self.Exitbutton.pack()
 
         # Open score
-        self.score = tk.Button(self, text='점수 확인', command=partial(self.onClick, master))
+        self.score = tk.Button(self, text='점수 확인', command=partial(self.onClick,        master))
         self.score.pack()
 
         self.image0 = tk.PhotoImage(file="sqr/reci.png", master=self)

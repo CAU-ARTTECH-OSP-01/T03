@@ -4,89 +4,47 @@ import time
 import random
 
 tmiList = [("대체육에 이은 대체 해산물 개발\n토마토로 만든 참치, 가지로 만든 대체 장어 등 ‘식물 기반 대체 해산물 식품’ 분야가 새롭게 주목받고 있다.\n "
-            + "\n"
-            +"\n"
             + "이미 미국에서는 식물 기반 대체식품 중 약 29%를 대체 해산물이 차지할 정도로 널리 사용되고 있다.\n"
-            +"\n"
             + " 해양 생태계 파괴나 중금속 및 미세 플라스틱 섭취 문제 등을 해결하기 위해 개발된 만큼 환경에 대한 경각심을 가지며\n"
-            +"\n"
             + " 대체 해산물을 적극적으로 소비할 수 있게 되길 바란다."),  # 1
            ("전 세계의 비건과 채식 가능한 식당을 알려주는 웹사이트 ‘해피 카우’\n"
-            + "\n"
-            +"\n"
             + "집에서 요리를 해 먹을 때와 달리, 외식을 하려고 하면 비건 식당을 직접 찾기가 쉽지 않다.\n"
-            +"\n"
             + " 특히 언어가 다른 나라로 여행을 가게 되면, 채식 식단을 하는 사람들에게는 막막할 것이다.\n"
-            +"\n"
             + "음식에 들어가는 재료를 물어보기도 쉽지 않고, 요구하기는 더더욱 어렵기 때문이다.\n"
-            +"\n"
             + " 이러한 상황에 편하게 사용할 수 있는 웹사이트가 있는데, https://www.happycow.net/이다.\n"
-            +"\n"
             + " 접속한 곳을 기준으로 가까운 비건식당 (혹은 비건 옵션이 있는 식당)을 알려주고, 리뷰도 많아 식당을 고를 때 참고하기 좋다. "),  # 2
            ("비건 호캉스\n "
-            + "\n"
             + "‘코트야드 메리어트 서울 타임스퀘어 호텔’에서 비건 라이프를 실천할 수 있는 패키지를 출시하였다.\n"
-            +"\n"
             + "조식 뷔페 및 모모카페에서 비건 메뉴인 콩고기 스테이크와 비건 샐러드를 제공하고,\n"
-            +"\n"
             + "각종 비건 뷰티 브랜드의 화장품과 친환경 플랜테리어 브랜드의 화분을 제공하는 패키지이다.\n"
-            +"\n"
             + "해당 호텔 뿐만 아니라 전국 각지에서 다양한 호텔들이 비건 패키지를 출시하고 있다.\n"
-            +"\n"
             + "MZ세대가 비거니즘에 주목하고 있는 만큼 그 영향을 받은 것으로 보인다.\n"
-            +"\n"
             + " 채식을 하는 사람들도 코로나 19시기에 호캉스를 온전히 즐길 수 있도록 다양한 선택지가 나오는 것은 긍정적인 상황이라 생각한다. "),  # 3
            ("국내 비건라면 종류\n"
-            +"\n"
-            + "\n"
             + "라면은 대부분 쇠고기/돼지고기 분말이 들어가 채식 식단을 하려는 사람들이 마음 놓고 사먹기 어려운 음식이다.\n"
-            +"\n"
             + "하지만 라면은 포기하기 힘든 만큼.. 비건을 위해 출시되는 라면이 있는데, 그 중 몇가지가 다음 제품들이다.\n"
-            +"\n"
             + "‘삼양’ <맛있는라면 비건>\n"
-            +"\n"
             + "‘풀무원’ <정면>\n"
-            +"\n"
             + "‘농심’ <순라면>\n"
-            +"\n"
             + "‘삼양’ <열무비빔면>\n"
-            +"\n"
             + "‘풀무원’ <정비빔면>\n"),  # 4
            ("국내 최초 비건치즈 전문 브랜드 ‘루이스 크리머리’ 런칭\n"
-            + "\n"
-            +"\n"
             + "치즈는 음식의 풍미를 높여주는 주요 재료로써 많은 사람들에게 사랑받으며 이용되고 있다.\n"
-            +"\n"
             + "하지만 비건 요리에는 치즈를 넣을 수 없기에, 비건 치즈를 이용해야 했었는데 기존 비건 가공치즈에는 단백질 함량이 거의 없다는 단점이 있었다.\n"
-            +"\n"
             + "단백질이 풍부한 두부와 견과류의 함량을 높임으로써 이러한 문제를 해결하고,\n"
-            +"\n"
             + "제작 과정에서 최대한 환경을 보호하기 위해 노력하는 브랜드가 런칭되었으니 채식을 하고자 마음먹었을 때 이용해보는 것도 좋을 것 같다. "),  # 5
            ("채식으로 인한 탄소발자국 73% 감축 효과\n"
-            +"\n"
-            + "\n"
             + "옥스퍼드 대학의 연구에 따르면 육류와 유제품을 줄이는 것만으로 개인은 최대 73%의 탄소발자국을 감축할 수 있다고 한다.\n"
-            +"\n"
             + "이는 육류 및 유제품을 만들고 유통하는 모든 과정을 추적한 결과로,\n"
-            +"\n"
             + "채식주의자 식단을 함으로써 우리는 온실가스뿐만 아니라 지구산성화, 토지 및 물 사용 등에 있어 지구에 미치는 영향을 줄일 수 있다.\n"
-            +"\n"
             + "완전 채식이 어렵다면 대체육류와 유제품을 활용하는 것만으로 탄소 배출량이 큰 폭으로 낮아지니, 이 방법을 시도해보는 것도 좋을 것 같다."),  # 6
            ("비건을 처음 시작하는 사람들이 정보를 얻기 좋은 국내 채식 관련 커뮤니티\n"
-            + "\n"
-            +"\n"
             + "한국채식연합 : https://www.vege.or.kr/\n"
-            +"\n"
             + "한국비건인증원 : http://vegan-korea.com/\n"
-            +"\n"
             + "한울벗채식나라\n"),  # 7
            ("식물성 지방은 뇌졸중 위험 감소시키는 효과가 있다.\n"
-            +"\n"
-            + "\n"
             + "지방 종류와 전반적인 뇌졸중 위험 사이의 연관성을 분석한 결과, 비유제품을 통해 동물성 지방을 많이 섭취하면 뇌졸중 위험이 16% 증가한다고 한다.\n"
-            +"\n"
             + "반면 식물성 지방이나 다불포화지방을 더 많이 섭취한 사람의 뇌졸중 위험은 더 낮았다.\n"
-            +"\n"
             + "따라서 옥수수유, 해바라기유와 같은 비열대성 식물성 기름으로 대체하는 것이 건강에 더 좋다.")]  # 8
 
 # 단계 선택 이미지 파일
@@ -282,7 +240,7 @@ class Vegeterian(tk.Frame):
         self.wall_label.place(x=-2, y=-2)
         tk.Frame.__init__(self, master)
 
-        self.blank = tk.Label(self, text='', width=10, height=10)
+        self.blank = tk.Label(self, text='', width=10, height=20)
         self.blank.grid(row=0, column=0)
 
         init()  # 초기화 호출
@@ -377,12 +335,12 @@ class SelectMaterial(tk.Frame):
         #####################감점 코드 위치###########################################
 
 
+       #####################감점 코드 위치###########################################
+
+
 # 조리할 방법 선택
 class MaterialTrim(tk.Frame):
     def __init__(self, master):
-        self.wall = tk.PhotoImage(file="background/hangeulselect.png")
-        self.wall_label = tk.Label(image=self.wall)
-        self.wall_label.place(x=-2, y=-2)
         tk.Frame.__init__(self, master)
 
         self.curFood = currentSelect["food"]
@@ -428,7 +386,7 @@ class CompleteWindow(tk.Frame):
         self.curFood = currentSelect["food"]
 
         # Complete Food Button
-        self.FoodImage = tk.PhotoImage(file=CompleteFoodFileList[self.curFood], master=self)
+        self.FoodImage = tk.PhotoImage(file=LevelFoodFileList[self.curFood], master=self)
         self.FoodBtn = tk.Button(self, height=1000, width=1000, image=self.FoodImage,
                                  command=partial(self.onclick, master))
         self.FoodBtn.pack()
@@ -440,48 +398,72 @@ class CompleteWindow(tk.Frame):
 # 결과
 class Result(tk.Frame):
     def __init__(self, master):
-        self.wall = tk.PhotoImage(file="background/joribubselect.png")
-        self.wall_label = tk.Label(image=self.wall)
-        self.wall_label.place(x=-2, y=-2)
         tk.Frame.__init__(self, master)
 
-        # 기둥 image
-        self.yellowImage = []
-        self.yellowLabel = []
-        self.xPos = [100, 219, 340]
-
         self.rNum = random.randint(0, 7)
+
+
 
         # Open restart
         self.Restartbutton = tk.Button(self, text='Restart', command=lambda: master.switch_frame(Vegeterian))
         self.Restartbutton.pack()
-        # self.Restartbutton.place(x=100,y=100)
-        self.Restartbutton.grid(row=0, column=0)
+        self.Restartbutton.place(x=0,y=0)
+
 
         # Open Exit
         self.Exitbutton = tk.Button(self, text='Exit', command=partial(self.onClickExit, master))
-        self.Exitbutton.grid(row=0, column=1)
+        self.Exitbutton.pack()
 
         # Open score
         self.score = tk.Button(self, text='점수 확인', command=partial(self.onClick, master))
-        self.score.grid(row=0, column=2)
+        self.score.pack()
+
+        self.image0 = tk.PhotoImage(file="sqr/reci.png", master=self)
+        self.label0 = tk.Label(self, image=self.image0, width=720, height=360)
+        #self.label0.pack()
+        ####레시피 사각형 위치
+        self.label0.place(x=0, y=0)
 
         self.tmi = tk.Label(self, text=tmiList[self.rNum], font=("Times", "10"))
-        self.tmi.grid(row=1, column=0, columnspan=3, sticky='W')
+        self.tmi.place(x=0, y=0)
 
-        for i in range(3):
-            self.yellowImage.append(tk.PhotoImage(file="sqr/노란기둥1.png", master=self))
-            self.yellowLabel.append(tk.Label(self, image=self.yellowImage[i], width=115, height=300))
-            self.yellowLabel[i].grid(row=2, column=i, columnspan=4, sticky='W')
-            # self.yellowLabel[i].place(x=self.xPos[i],y=100)
+
+        self.image1 = tk.PhotoImage(file="sqr/bbal.png", master=self)
+        self.label1 = tk.Label(self, image=self.image1, width=118, height=244)
+        self.label1.pack()
+        self.label1.place(x=1, y=0)
+
+        self.image2 = tk.PhotoImage(file="sqr/no.png", master=self)
+        self.label2 = tk.Label(self, image=self.image2, width=118, height=244)
+        self.label2.pack()
+        self.label2.place(x=2, y=0)
+
+        self.image3 = tk.PhotoImage(file="sqr/cho.png", master=self)
+        self.label3 = tk.Label(self, image=self.image3, width=118, height=244)
+        self.label3.pack()
+        self.label3.place(x=3, y=0)
+
+
+
+
+
+
 
     def onClick(self, master):
         # self.yellowLabel[0].place(x=self.xPos[0], y=1000 /  220+50)
-        for i in range(2):
-            for j in range(1, 50):
-                self.yellowLabel[i].place(x=self.xPos[i], y=1000 / j + 220 + 50)
-                self.update()
-                time.sleep(0.01)
+
+        for j in range(1, 50):
+            self.label1.place(x=100, y=1000 / j + 220 + 15*dedu)
+            self.update()
+            time.sleep(0.01)
+
+            self.label2.place(x=219, y=1000 / j + 220 + 15)
+            self.update()
+            time.sleep(0.01)
+
+            self.label3.place(x=340, y=1000 / j + 220 + 15)
+            self.update()
+            time.sleep(0.01)
 
     def onClickExit(self, master):
         master.quit()
